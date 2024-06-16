@@ -1,0 +1,29 @@
+
+{{- if and .Values.persistence.linkding.enabled (not .Values.persistence.linkding.existingClaim) }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "linkding.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "linkding.name" . }}
+    helm.sh/chart: {{ include "linkding.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- with .Values.persistence.linkding.annotations }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.linkding.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.linkding.size | quote }}
+{{- if .Values.persistence.linkding.storageClass }}
+{{- if (eq "-" .Values.persistence.linkding.storageClass) }}
+  storageClassName: ""
+{{- else }}
+  storageClassName: "{{ .Values.persistence.linkding.storageClass }}"
+{{- end }}
+{{- end }}
+{{- end -}}

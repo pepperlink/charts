@@ -1,0 +1,9 @@
+apiVersion: v2
+name: lazylibrarian
+version: "0.1.1"
+description: The Lazy Librarian is a for books.
+sources:
+  - https://github.com/linuxserver/docker-lazylibrarian
+  - lscr.io/linuxserver/lazylibrarian/
+# renovate: image=lscr.io/linuxserver/lazylibrarian
+appVersion:  "version-be7d9ccf"

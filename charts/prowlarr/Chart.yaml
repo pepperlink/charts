@@ -1,0 +1,10 @@
+apiVersion: v2
+name: prowlarr
+version: "0.1.20"
+description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs base stack.
+type: application
+sources:
+  - https://github.com/linuxserver/docker-prowlarr
+  - lscr.io/linuxserver/prowlarr
+# renovate: image=lscr.io/linuxserver/prowlarr
+appVersion: "1.18.0"

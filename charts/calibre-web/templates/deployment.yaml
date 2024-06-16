@@ -1,0 +1,87 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "calibre-web.fullname" . }}
+  labels:
+    {{- include "calibre-web.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "calibre-web.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "calibre-web.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "calibre-web.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          env:
+            - name: TZ
+              value: "{{ .Values.timezone }}"
+            # - name: DOCKER_MODS
+            #   value: "linuxserver/mods:universal-calibre"
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.port }}
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            #FIXME Volumes are a mess and need to be properly value-ised to make the chart agonstic
+            - mountPath: /config
+              name: calibre-web-config
+            - mountPath: /media
+              name: calibre-web-media
+            - mountPath: /media/books/metadata.db
+              subPath: metadata.db
+              name: calibre-db
+      volumes:
+        - name: calibre-web-media
+          persistentVolumeClaim:
+            claimName: calibre-web-media
+        - name: calibre-web-config
+          hostPath:
+            path: "/var/nfs/kubernetes/mediastack/config/{{ include "calibre-web.fullname" . }}"
+            type: DirectoryOrCreate
+        - name: calibre-db
+          hostPath:
+            path: /var/nfs/kubernetes/mediastack/config/calibre
+            type: Directory
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

@@ -1,0 +1,9 @@
+apiVersion: v2
+name: speedtest-exporter
+version: "0.1.17"
+description: A Helm chart for Kubernetes
+type: application
+sources:
+  - ghcr.io/miguelndecarvalho/speedtest-exporter
+# renovate: image=ghcr.io/miguelndecarvalho/speedtest-exporter
+appVersion: "v3.5.4"

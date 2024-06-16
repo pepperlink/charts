@@ -1,0 +1,9 @@
+apiVersion: v2
+name: calibre-web
+version: "0.1.16"
+description: calibre-web is a web front end for books.
+type: application
+sources:
+  - lscr.io/linuxserver/calibre-web
+# renovate: image=lscr.io/linuxserver/calibre-web
+appVersion:  "0.6.21"

@@ -1,0 +1,13 @@
+# Manual testing of the scraper
+
+# exec into mealie container
+keti -n mediastack deployments/mealie -- bash
+
+# activate the python virtual environment
+source /opt/pysetup/.venv/bin/activate
+python -i
+
+# test the scraper
+from recipe_scrapers import scrape_me
+ar = scrape_me('https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers/')
+ah = scrape_me('https://www.ah.nl/allerhande/recept/R-R1194990/risotto-met-tuinbonen-citroen-en-pecorino')

@@ -1,0 +1,187 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "mealie.fullname" . }}
+  labels:
+    {{- include "mealie.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "mealie.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "mealie.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "mealie.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          command: [ "/app/data/start-mealie.sh" ]
+          env:
+            - name: TZ
+              value: "{{ .Values.environment.timezone }}"
+            # - name: LOG_LEVEL
+            #   value: "{{ .Values.config.logLevel }}"
+            - name: ALLOW_SIGNUP
+              value: "{{ .Values.config.allowSignup }}"
+            - name: API_DOCS
+              value: "{{ .Values.config.apiDocs }}"
+            - name: BASE_URL
+              value: "{{ .Values.config.baseUrl }}"
+            - name: DEFAULT_GROUP
+              value: "{{ .Values.config.defaultGroup }}"
+            - name: DEMO
+              value: "{{ .Values.config.demo }}"
+            - name: DB_ENGINE
+              value: "{{ .Values.config.db.engine }}"
+            - name: MAX_WORKERS
+              value: "{{ .Values.config.web.maxWorkers }}"
+            - name: POSTGRES_DB
+              value: "{{ .Values.config.db.postgres.db }}"
+            - name: POSTGRES_PASSWORD
+              value: "{{ .Values.config.db.postgres.password }}"
+            - name: POSTGRES_PORT
+              value: "{{ .Values.config.db.postgres.port }}"
+            - name: POSTGRES_SERVER
+              value: "{{ .Values.config.db.postgres.server }}"
+            - name: POSTGRES_USER
+              value: "{{ .Values.config.db.postgres.user }}"
+            - name: SMTP_AUTH_STRATEGY
+              value: "{{ .Values.config.email.smtpAuthStrategy }}"
+            - name: SMTP_FROM_EMAIL
+              value: "{{ .Values.config.email.smtpFromEmail }}"
+            - name: SMTP_FROM_NAME
+              value: "{{ .Values.config.email.smtpFromName }}"
+            - name: SMTP_HOST
+              value: "{{ .Values.config.email.smtpHost }}"
+            - name: SMTP_PASSWORD
+              value: "{{ .Values.config.email.smtpPassword }}"
+            - name: SMTP_PORT
+              value: "{{ .Values.config.email.smtpPort }}"
+            - name: SMTP_USER
+              value: "{{ .Values.config.email.smtpUser }}"
+            - name: WEB_CONCURRENCY
+              value: "{{ .Values.config.web.webConcurrency }}"
+            - name: WEB_GUNICORN
+              value: "{{ .Values.config.web.gunicorn }}"
+            - name: WORKERS_PER_CORE
+              value: "{{ .Values.config.web.workersPerCore }}"
+            - name: LDAP_AUTH_ENABLED
+              value: "{{ .Values.config.ldap.enabled }}"
+            - name: LDAP_ADMIN_FILTER
+              value: "{{ .Values.config.ldap.adminFilter }}"
+            - name: LDAP_BASE_DN
+              value: "{{ .Values.config.ldap.baseDN }}"
+            - name: LDAP_CA_CERT_FILE
+              value: "{{ .Values.config.ldap.caCertFile }}"
+            - name: LDAP_ENABLE_START_TLS
+              value: "{{ .Values.config.ldap.enableStartTls }}"
+            - name: LDAP_ID_ATTRIBUTE
+              value: "{{ .Values.config.ldap.idAttribute }}"
+            - name: LDAP_MAIL_ATTRIBUTE
+              value: "{{ .Values.config.ldap.mailAttribute }}"
+            - name: LDAP_NAME_ATTRIBUTE
+              value: "{{ .Values.config.ldap.nameAttribute }}"
+            - name: LDAP_QUERY_BIND
+              value: "{{ .Values.config.ldap.queryBind }}"
+            - name: LDAP_QUERY_PASSWORD
+              value: "{{ .Values.config.ldap.queryPassword }}"
+            - name: LDAP_SERVER_URL
+              value: "{{ .Values.config.ldap.serverURL }}"
+            - name: LDAP_TLS_INSECURE
+              value: "{{ .Values.config.ldap.tlsInsecure }}"
+            - name: LDAP_USER_FILTER
+              value: "{{ .Values.config.ldap.userFilter }}"
+            - name: OIDC_AUTH_ENABLED
+              value: "{{ .Values.config.oidc.enabled }}"
+            {{- if .Values.config.oidc.enabled }}
+            - name: OIDC_ADMIN_GROUP
+              value: "{{ .Values.config.oidc.adminGroup }}"
+            - name: OIDC_AUTO_REDIRECT
+              value: "{{ .Values.config.oidc.autoRedirect }}"
+            - name: OIDC_CLIENT_ID
+              value: "{{ .Values.config.oidc.clientId }}"
+            - name: OIDC_CONFIGURATION_URL
+              value: "{{ .Values.config.oidc.configurationUrl }}"
+            - name: OIDC_PROVIDER_NAME
+              value: "{{ .Values.config.oidc.providerName }}"
+            - name: OIDC_REMEMBER_ME
+              value: "{{ .Values.config.oidc.rememberMe }}"
+            - name: OIDC_SIGNUP_ENABLED
+              value: "{{ .Values.config.oidc.signupEnabled }}"
+            - name: OIDC_USER_GROUP
+              value: "{{ .Values.config.oidc.userGroup }}"
+            {{- end }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: api
+              containerPort: {{ .Values.service.ports.api }}
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: api
+          readinessProbe:
+            httpGet:
+              path: /
+              port: api
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - mountPath: /app/data
+              name: mealie-appdata
+        - name: "{{ .Chart.Name }}-proxy"
+          command: [ "/app/tlsproxy" ]
+          args: [ "-cert",
+            "/certs/cert.pem",
+            "-key",
+            "/certs/key.pem",
+            "-client",
+            "Firefox-55",
+            "-port",
+            "3128",
+            "-addr",
+            "0.0.0.0",
+            "-verbose" ]
+          image: ghcr.io/rosahaj/tlsproxy:latest
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 3128
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /certs
+              name: mealie-appdata
+              subPath: certs
+      volumes:
+        - name: mealie-appdata
+          persistentVolumeClaim:
+            claimName: mealie-appdata
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

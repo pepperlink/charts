@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "qbittorrent.fullname" . }}
+  labels:
+    {{- include "qbittorrent.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "qbittorrent.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "qbittorrent.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "qbittorrent.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          env:
+            - name: qbittorrent_LOGLEVEL
+              value: {{ .Values.loglevel }}
+            - name: TZ
+              value: "{{ .Values.timezone }}"
+            - name: WEBUI_PORT
+              value: "{{ .Values.service.webuiPort }}"
+            - name: TORRENTING_PORT
+              value: "{{ .Values.service.torrentingPort }}"
+            {{ if .Values.environment.dockermods -}}
+            - name: DOCKER_MODS
+              value: "{{ .Values.environment.dockermods }}"
+            {{- end }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.webuiPort }}
+              protocol: TCP
+            - containerPort: {{ .Values.service.torrentingPort }}
+              protocol: TCP
+            - containerPort: {{ .Values.service.torrentingPort }}
+              protocol: UDP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - mountPath: /config
+              name: qbittorrent-config
+            - mountPath: /media
+              name: qbittorrent-media
+      volumes:
+        - name: qbittorrent-config
+          hostPath:
+            path: "/var/nfs/kubernetes/mediastack/config/{{ include "qbittorrent.fullname" . }}"
+            type: DirectoryOrCreate
+        - name: qbittorrent-media
+          persistentVolumeClaim:
+            claimName: qbittorrent-media
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

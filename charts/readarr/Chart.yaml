@@ -1,0 +1,9 @@
+apiVersion: v2
+name: readarr
+description: readarr is for books.
+version: "0.1.24"
+type: application
+sources:
+  - lscr.io/linuxserver/readarr
+# renovate: image=lscr.io/linuxserver/readarr
+appVersion: "0.3.28-develop"

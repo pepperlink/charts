@@ -1,0 +1,9 @@
+apiVersion: v2
+name: storm
+description: Storm is a mobile-friendly frontend for Deluge.
+type: application
+sources:
+  - ghcr.io/relvacode/storm
+# renovate: image=ghcr.io/relvacode/storm
+version: "0.1.8"
+appVersion: "v1.3.0"

@@ -1,0 +1,9 @@
+apiVersion: v2
+name: deluge
+version: "0.1.30"
+description: Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
+type: application
+sources:
+  - lscr.io/linuxserver/deluge
+# renovate: image=lscr.io/linuxserver/deluge
+appVersion: "18.04.1"
