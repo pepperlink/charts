@@ -1,0 +1,235 @@
+apiVersion: v1
+entries:
+  bazarr:
+  - apiVersion: v2
+    appVersion: 1.4.3
+    created: "2024-06-16T22:36:41.223383798Z"
+    description: bazarr is a for subtitles.
+    digest: abaa35db0352c6d29bc938fe110f90a5bf84e4996f0f29befdf8519435373a2b
+    name: bazarr
+    sources:
+    - lscr.io/linuxserver/bazarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/bazarr-0.1.19/bazarr-0.1.19.tgz
+    version: 0.1.19
+  calibre:
+  - apiVersion: v2
+    appVersion: 7.12.0
+    created: "2024-06-16T22:36:41.412958424Z"
+    description: calibre is an organizer and contentserver for books.
+    digest: 022bbec812d1fe3d9cc412e07ba9dc7bb7981f31c5ba06924b5dd78ac97e52d2
+    name: calibre
+    sources:
+    - lscr.io/linuxserver/calibre
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/calibre-0.1.26/calibre-0.1.26.tgz
+    version: 0.1.26
+  calibre-web:
+  - apiVersion: v2
+    appVersion: 0.6.21
+    created: "2024-06-16T22:36:41.575122985Z"
+    description: calibre-web is a web front end for books.
+    digest: 039fcc24ecb004952d41c150037a9f95f13ebfef40fd30049a509c442c02b01f
+    name: calibre-web
+    sources:
+    - lscr.io/linuxserver/calibre-web
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/calibre-web-0.1.16/calibre-web-0.1.16.tgz
+    version: 0.1.16
+  deluge:
+  - apiVersion: v2
+    appVersion: 18.04.1
+    created: "2024-06-16T22:36:41.779572017Z"
+    description: Deluge is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 5d2de384451a842e743502886ce4c708e415c51ff2bbe8844751e69e724fc6b7
+    name: deluge
+    sources:
+    - lscr.io/linuxserver/deluge
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/deluge-0.1.30/deluge-0.1.30.tgz
+    version: 0.1.30
+  jellyfin:
+  - apiVersion: v2
+    appVersion: 10.9.6
+    created: "2024-06-16T22:36:41.948672822Z"
+    description: Jellyfin Media Server
+    digest: 49791e8705d43a1e10dae458a2a744a5b8707ea95dd5b1f030d7d069fa6469c1
+    name: jellyfin
+    sources:
+    - docker.io/jellyfin/jellyfin
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/jellyfin-0.1.20/jellyfin-0.1.20.tgz
+    version: 0.1.20
+  lazylibrarian:
+  - apiVersion: v2
+    appVersion: version-be7d9ccf
+    created: "2024-06-16T22:36:42.147450122Z"
+    description: The Lazy Librarian is a for books.
+    digest: 02dd41088e3d5b549be568cdce8eaaa91650b877ee06fbfa71ed081a51092a2b
+    name: lazylibrarian
+    sources:
+    - https://github.com/linuxserver/docker-lazylibrarian
+    - lscr.io/linuxserver/lazylibrarian/
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/lazylibrarian-0.1.1/lazylibrarian-0.1.1.tgz
+    version: 0.1.1
+  linkding:
+  - apiVersion: v2
+    appVersion: 1.31.0
+    created: "2024-06-16T22:36:42.346666372Z"
+    description: LinkDing
+    digest: c8f6571a58551384454f9e148718aefbc8667e192adb534277c33baa3d8cec7c
+    name: linkding
+    sources:
+    - lscr.io/linuxserver/linkding
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/linkding-0.1.11/linkding-0.1.11.tgz
+    version: 0.1.11
+  mealie:
+  - apiVersion: v2
+    appVersion: v1.8.0
+    created: "2024-06-16T22:36:42.532660378Z"
+    description: mealie has your recipes.
+    digest: db66830c0a3ff1f5b73b33518d2d43c0eb83331ef2f0ac3c77739a573489c8be
+    name: mealie
+    sources:
+    - https://github.com/mealie-recipes/mealie/
+    - ghcr.io/mealie-recipes/mealie/
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/mealie-0.1.3/mealie-0.1.3.tgz
+    version: 0.1.3
+  prowlarr:
+  - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2024-06-16T22:36:42.73154801Z"
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack.
+    digest: b6df7532f8304755bec033d18c25c0c63724a3887716333d7bbea9233e95ba2f
+    name: prowlarr
+    sources:
+    - https://github.com/linuxserver/docker-prowlarr
+    - lscr.io/linuxserver/prowlarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/prowlarr-0.1.20/prowlarr-0.1.20.tgz
+    version: 0.1.20
+  qbittorrent:
+  - apiVersion: v2
+    appVersion: 4.6.5
+    created: "2024-06-16T22:36:42.918126573Z"
+    description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 58ae0c8b45c048a6f7f092d93a27ff3e68ef4b12b6c080f8154524796008f603
+    name: qbittorrent
+    sources:
+    - https://github.com/linuxserver/docker-qbittorrent
+    - lscr.io/linuxserver/qbittorrent
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/qbittorrent-0.1.6/qbittorrent-0.1.6.tgz
+    version: 0.1.6
+  radarr:
+  - apiVersion: v2
+    appVersion: 5.6.0
+    created: "2024-06-16T22:36:43.144328409Z"
+    description: radarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 959c9df5723c9a7061c3fcf707055729e2954044492b71323553afd85e60a759
+    name: radarr
+    sources:
+    - https://github.com/linuxserver/docker-radarr
+    - lscr.io/linuxserver/radarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/radarr-0.1.20/radarr-0.1.20.tgz
+    version: 0.1.20
+  readarr:
+  - apiVersion: v2
+    appVersion: 0.3.28-develop
+    created: "2024-06-16T22:36:43.358354247Z"
+    description: readarr is for books.
+    digest: 1330eb1ab3bbbfb072a30c4635a81b5e5e8f291300d196178ff6aa5f44ea2301
+    name: readarr
+    sources:
+    - lscr.io/linuxserver/readarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/readarr-0.1.24/readarr-0.1.24.tgz
+    version: 0.1.24
+  sabnzbd:
+  - apiVersion: v2
+    appVersion: 4.3.2
+    created: "2024-06-16T22:36:43.545396099Z"
+    description: sabnzbd is a usenet client.
+    digest: a663a9b5a9fe3af2eed89f77cdcc7fe7ef2912f98c52ac4ce271db6b95d167f6
+    name: sabnzbd
+    sources:
+    - https://github.com/linuxserver/docker-sabnzbd
+    - lscr.io/linuxserver/sabnzbd
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/sabnzbd-0.1.2/sabnzbd-0.1.2.tgz
+    version: 0.1.2
+  searcharr:
+  - apiVersion: v2
+    appVersion: v3.2.2
+    created: "2024-06-16T22:36:43.744005491Z"
+    description: searcharr
+    digest: 9cd3d8f5a2266c4cba8713e652cd3aa39b41133ca5001a6625d82674444e674e
+    name: searcharr
+    sources:
+    - ghcr.io/cathelijne/searcharr
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/searcharr-0.1.4/searcharr-0.1.4.tgz
+    version: 0.1.4
+  sonarr:
+  - apiVersion: v2
+    appVersion: 4.0.5
+    created: "2024-06-16T22:36:43.948494454Z"
+    description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: d68fff513d74ec37e9e73f6178263fa4a8fd28db1ad2afc4a227e7474f83f8a1
+    name: sonarr
+    sources:
+    - lscr.io/linuxserver/sonarr
+    - https://github.com/linuxserver/docker-sonarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/sonarr-0.1.19/sonarr-0.1.19.tgz
+    version: 0.1.19
+  speedtest-exporter:
+  - apiVersion: v2
+    appVersion: v3.5.4
+    created: "2024-06-16T22:36:44.13914629Z"
+    description: A Helm chart for Kubernetes
+    digest: 97a5005a8f6b7ef45e906f3108d30ed66d8737caca532211d5affafb4565768d
+    name: speedtest-exporter
+    sources:
+    - ghcr.io/miguelndecarvalho/speedtest-exporter
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/speedtest-exporter-0.1.17/speedtest-exporter-0.1.17.tgz
+    version: 0.1.17
+  storm:
+  - apiVersion: v2
+    appVersion: v1.3.0
+    created: "2024-06-16T22:36:44.335203476Z"
+    description: Storm is a mobile-friendly frontend for Deluge.
+    digest: 674a69a58acccbf11650598f26d9fc3a867fb977685578482047e894c6f86777
+    name: storm
+    sources:
+    - ghcr.io/relvacode/storm
+    type: application
+    urls:
+    - https://github.com/pepperlink/helm-charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
+    version: 0.1.8
+generated: "2024-06-16T22:36:44.335211821Z"
