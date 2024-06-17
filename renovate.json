@@ -1,0 +1,45 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    ":disableMajorUpdates"
+  ],
+
+  "assignees": ["@cathelijne"],
+
+  "vulnerabilityAlerts": {
+    "automerge": true
+  },
+
+  "gitIgnoredAuthors": ["renovate-bot", "Renovate Bot", "bot@pepperlink.nl", "Renovate Bot <bot@pepperlink.nl>"],
+
+  "major": {
+    "dependencyDashboardApproval": true,
+    "automerge": false
+  },
+
+  "platformAutomerge": true,
+
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update docker image references in Chart.yaml",
+      "datasourceTemplate": "docker",
+      "fileMatch": ["(^|/)Chart\\.yaml$"],
+      "matchStrings": [ "#\\s*?renovate:\\s*?image=(?<depName>\\S*?)\\s*?appVersion:\\s*?(?:'|\")(?<currentValue>\\S*?)(?:'|\")" ]
+    }
+  ],
+
+  "packageRules": [
+    {
+      "description": "Group dependencies from Helm charts",
+      "matchFileNames": ["**/Chart.yaml"],
+      "groupName": "Helm Charts",
+      "groupSlug": "helmcharts",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "autoApprove": true,
+      "automerge": true
+    }
+  ]
+}
