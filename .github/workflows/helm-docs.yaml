@@ -86,3 +86,11 @@ jobs:
           git-push-user-name: "Renovate Bot"
           git-commit-message: "chore: update Helm documentation for $(GITHUB_REF_NAME)"
 
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+    steps:
+      - name: Check
+        run: |
+          echo "Check complete!"
