@@ -79,7 +79,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run helm-docs and push back
-        uses: losisin/helm-docs-github-action@v1.2.0
+        uses: losisin/helm-docs-github-action@v1.2.10
         with:
           git-push: true
           git-push-user-email: "bot@pepperlink.nl"
