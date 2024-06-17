@@ -26,20 +26,20 @@ config:
   loglevel: INFO
   db:
     engine: sqlite # postgres or sqlite
-    # postgres:
-    #   user: mealie
-    #   password: mealie
-    #   server: postgres
-    #   port: 5432
-    #   db: mealie
+    postgres:
+      user: mealie
+      password: mealie
+      server: postgres
+      port: 5432
+      db: mealie
   email:
-    # smtpHost:
-    # smtpPort: 587
-    # smtpFromName: Mealie
-    # smtpAuthStrategy: TLS
-    # smtpFromEmail:
-    # smtpUser:
-    # smtpPassword:
+    smtpHost:
+    smtpPort: 587
+    smtpFromName: Mealie
+    smtpAuthStrategy: TLS
+    smtpFromEmail:
+    smtpUser:
+    smtpPassword:
   ldap:
     enabled: "false"
     # adminFilter: ""

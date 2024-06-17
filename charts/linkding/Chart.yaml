@@ -4,6 +4,6 @@ version: "0.1.11"
 description: LinkDing
 type: application
 sources:
-  - lscr.io/linuxserver/linkding
+  - https://github.com/sissbruecker/linkding
 # renovate: image=sissbruecker/linkding
 appVersion: "1.31.0"

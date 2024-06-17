@@ -5,6 +5,5 @@ description: mealie has your recipes.
 type: application
 sources:
   - https://github.com/mealie-recipes/mealie/
-  - ghcr.io/mealie-recipes/mealie/
 # renovate: image=ghcr.io/mealie-recipes/mealie
 appVersion: "v1.8.0"

@@ -2,9 +2,10 @@ apiVersion: v2
 name: radarr
 version: "0.1.20"
 description: radarr is a lightweight, Free Software, cross-platform BitTorrent client.
+icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
 sources:
   - https://github.com/linuxserver/docker-radarr
-  - lscr.io/linuxserver/radarr
+  - https://docs.linuxserver.io/images/docker-radarr
 # renovate: image=lscr.io/linuxserver/radarr
 appVersion: "5.6.0"

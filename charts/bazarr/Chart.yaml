@@ -1,9 +1,10 @@
 apiVersion: v2
 name: bazarr
 description: bazarr is a for subtitles.
-sources:
-  - lscr.io/linuxserver/bazarr
+icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
 version: "0.1.19"
+sources:
+  - https://docs.linuxserver.io/images/docker-bazarr
 # renovate: image=lscr.io/linuxserver/bazarr
 appVersion: "1.4.3"

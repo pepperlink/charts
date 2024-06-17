@@ -2,8 +2,9 @@ apiVersion: v2
 name: readarr
 description: readarr is for books.
 version: "0.1.24"
+icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
 sources:
-  - lscr.io/linuxserver/readarr
+  - https://docs.linuxserver.io/images/docker-readarr
 # renovate: image=lscr.io/linuxserver/readarr
 appVersion: "0.3.28-develop"
