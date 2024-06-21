@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - 'renovate/**'
-  pull_request:
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!main'     # excludes main
+
 
 jobs:
   changed-files:
@@ -26,7 +30,8 @@ jobs:
             kubernetes/charts/**
           json: true
 
-      - id: set-matrix
+      - name: Set Matrix
+        id: set-matrix
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
           set -eux
