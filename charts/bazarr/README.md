@@ -6,7 +6,7 @@ bazarr is a for subtitles.
 
 ## Source Code
 
-* <lscr.io/linuxserver/bazarr>
+* <https://docs.linuxserver.io/images/docker-bazarr>
 
 ## Values
 

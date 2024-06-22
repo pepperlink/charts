@@ -6,7 +6,7 @@ readarr is for books.
 
 ## Source Code
 
-* <lscr.io/linuxserver/readarr>
+* <https://docs.linuxserver.io/images/docker-readarr>
 
 ## Values
 

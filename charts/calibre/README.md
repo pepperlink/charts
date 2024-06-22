@@ -6,7 +6,7 @@ calibre is an organizer and contentserver for books.
 
 ## Source Code
 
-* <lscr.io/linuxserver/calibre>
+* <https://docs.linuxserver.io/images/docker-calibre>
 
 ## Values
 

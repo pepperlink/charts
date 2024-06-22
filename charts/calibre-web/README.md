@@ -6,7 +6,7 @@ calibre-web is a web front end for books.
 
 ## Source Code
 
-* <lscr.io/linuxserver/calibre-web>
+* <https://docs.linuxserver.io/images/docker-calibre-web>
 
 ## Values
 

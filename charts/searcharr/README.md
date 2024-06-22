@@ -6,7 +6,7 @@ searcharr
 
 ## Source Code
 
-* <ghcr.io/cathelijne/searcharr>
+* <https://github.com/cathelijne/searcharr>
 
 ## Values
 

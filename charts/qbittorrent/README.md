@@ -7,7 +7,7 @@ qbittorrent is a lightweight, Free Software, cross-platform BitTorrent client.
 ## Source Code
 
 * <https://github.com/linuxserver/docker-qbittorrent>
-* <lscr.io/linuxserver/qbittorrent>
+* <https://docs.linuxserver.io/images/docker-qbittorrent>
 
 ## Values
 

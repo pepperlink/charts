@@ -7,7 +7,7 @@ Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs base s
 ## Source Code
 
 * <https://github.com/linuxserver/docker-prowlarr>
-* <lscr.io/linuxserver/prowlarr>
+* <https://docs.linuxserver.io/images/docker-prowlarr>
 
 ## Values
 

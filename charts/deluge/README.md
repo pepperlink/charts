@@ -6,7 +6,7 @@ Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
 
 ## Source Code
 
-* <lscr.io/linuxserver/deluge>
+* <https://docs.linuxserver.io/images/docker-deluge>
 
 ## Values
 
