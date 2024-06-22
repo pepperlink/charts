@@ -1,13 +1,12 @@
 # mealie
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.8.0](https://img.shields.io/badge/AppVersion-v1.8.0-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.9.0](https://img.shields.io/badge/AppVersion-v1.9.0-informational?style=flat-square)
 
 mealie has your recipes.
 
 ## Source Code
 
 * <https://github.com/mealie-recipes/mealie/>
-* <ghcr.io/mealie-recipes/mealie/>
 
 ## Values
 
@@ -22,9 +21,20 @@ mealie has your recipes.
 | config.apiDocs | string | `"true"` |  |
 | config.baseURL | string | `"http://localhost:8080"` |  |
 | config.db.engine | string | `"sqlite"` |  |
+| config.db.postgres.db | string | `"mealie"` |  |
+| config.db.postgres.password | string | `"mealie"` |  |
+| config.db.postgres.port | int | `5432` |  |
+| config.db.postgres.server | string | `"postgres"` |  |
+| config.db.postgres.user | string | `"mealie"` |  |
 | config.defaultGroup | string | `"Home"` |  |
 | config.demo | string | `"false"` |  |
-| config.email | string | `nil` |  |
+| config.email.smtpAuthStrategy | string | `"TLS"` |  |
+| config.email.smtpFromEmail | string | `nil` |  |
+| config.email.smtpFromName | string | `"Mealie"` |  |
+| config.email.smtpHost | string | `nil` |  |
+| config.email.smtpPassword | string | `nil` |  |
+| config.email.smtpPort | int | `587` |  |
+| config.email.smtpUser | string | `nil` |  |
 | config.ldap.enabled | string | `"false"` |  |
 | config.loglevel | string | `"INFO"` |  |
 | config.oidc.adminGroup | string | `""` |  |

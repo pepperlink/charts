@@ -1,13 +1,12 @@
 # lazylibrarian
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![AppVersion: version-be7d9ccf](https://img.shields.io/badge/AppVersion-version--be7d9ccf-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: version-be7d9ccf](https://img.shields.io/badge/AppVersion-version--be7d9ccf-informational?style=flat-square)
 
 The Lazy Librarian is a for books.
 
 ## Source Code
 
-* <https://github.com/linuxserver/docker-lazylibrarian>
-* <lscr.io/linuxserver/lazylibrarian/>
+* <https://docs.linuxserver.io/images/docker-lazylibrarian>
 
 ## Values
 
