@@ -6,7 +6,7 @@ Storm is a mobile-friendly frontend for Deluge.
 
 ## Source Code
 
-* <ghcr.io/relvacode/storm>
+* <https://github.com/relvacode/storm>
 
 ## Values
 

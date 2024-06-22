@@ -7,7 +7,7 @@ sabnzbd is a usenet client.
 ## Source Code
 
 * <https://github.com/linuxserver/docker-sabnzbd>
-* <lscr.io/linuxserver/sabnzbd>
+* <https://docs.linuxserver.io/images/docker-sabnzbd>
 
 ## Values
 

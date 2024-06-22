@@ -6,7 +6,7 @@ Jellyfin Media Server
 
 ## Source Code
 
-* <docker.io/jellyfin/jellyfin>
+* <https://hub.docker.com/r/jellyfin/jellyfin>
 
 ## Values
 

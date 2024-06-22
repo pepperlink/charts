@@ -6,7 +6,7 @@ sonarr is a lightweight, Free Software, cross-platform BitTorrent client.
 
 ## Source Code
 
-* <lscr.io/linuxserver/sonarr>
+* <https://docs.linuxserver.io/images/docker-sonarr>
 * <https://github.com/linuxserver/docker-sonarr>
 
 ## Values

@@ -6,7 +6,7 @@ A Helm chart for Kubernetes
 
 ## Source Code
 
-* <ghcr.io/miguelndecarvalho/speedtest-exporter>
+* <https://github.com/miguelndecarvalho/speedtest-exporter>
 
 ## Values
 
