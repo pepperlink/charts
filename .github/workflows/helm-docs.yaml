@@ -74,7 +74,7 @@ jobs:
         env:
           CHART: ${{ matrix.charts }}
         with:
-          commit_message: "chore: bump $CHART to $VERSION"
+          commit_message: "chore: bump ${{ matrix.charts }} to ${VERSION}"
           commit_user_name: "Renovate Bot"
           commit_user_email: "bot@pepperlink.nl"
 
