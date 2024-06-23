@@ -82,6 +82,18 @@ entries:
   linkding:
   - apiVersion: v2
     appVersion: 1.31.0
+    created: "2024-06-23T19:15:20.852463166Z"
+    description: LinkDing
+    digest: b5eda5cffdb7fcc9cd0f7f988a8b6e218836c4bdf306d893052a71168c4a4eb0
+    name: linkding
+    sources:
+    - https://github.com/sissbruecker/linkding
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/linkding-0.1.12/linkding-0.1.12.tgz
+    version: 0.1.12
+  - apiVersion: v2
+    appVersion: 1.31.0
     created: "2024-06-16T22:36:42.346666372Z"
     description: LinkDing
     digest: c8f6571a58551384454f9e148718aefbc8667e192adb534277c33baa3d8cec7c
@@ -247,4 +259,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-06-23T18:47:04.366022392Z"
+generated: "2024-06-23T19:15:20.852507067Z"
