@@ -1,0 +1,14 @@
+---
+apiVersion: v2
+description: Chart for gethomepage/homepage. Original chart by jameswyn/helm-charts
+icon: https://github.com/gethomepage/homepage/blob/de584eae8f12a0d257e554e9511ef19bd2a1232c/public/mstile-150x150.png
+name: homepage
+version: 0.0.1
+# renovate: image=ghcr.io/gethomepage/homepage
+appVersion: v0.8.8
+sources:
+  - https://github.com/gethomepage/homepage/
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.3.1
