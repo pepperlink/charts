@@ -8,4 +8,4 @@ sources:
   - https://github.com/linuxserver/docker-prowlarr
   - https://docs.linuxserver.io/images/docker-prowlarr
 # renovate: image=lscr.io/linuxserver/prowlarr
-appVersion: "1.18.0"
+appVersion: "1.19.0"
