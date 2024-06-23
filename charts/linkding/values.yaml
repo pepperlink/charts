@@ -15,10 +15,11 @@ nameOverride: ""
 fullnameOverride: ""
 
 
-# use existing secrets or configmap. See https://github.com/sissbruecker/linkding/blob/master/docs/Options.md
-# envFrom:
-  # - configMapRef:
-  #     name: linkding-config
+# -- Linkding is configured with envvars. Use existing secrets or configmap.
+# See https://github.com/sissbruecker/linkding/blob/master/docs/Options.md
+envFrom:
+  - configMapRef:
+      name: linkding-config
   # - secretRef:
   #     name: linkding-secret
 
