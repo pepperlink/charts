@@ -1,6 +1,6 @@
 apiVersion: v2
 name: prowlarr
-version: "0.1.140"
+version: "0.1.141"
 description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs base stack.
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
