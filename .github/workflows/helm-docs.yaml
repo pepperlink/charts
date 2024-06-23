@@ -19,8 +19,6 @@ jobs:
       any_changed: ${{ steps.changed-files-specific.outputs.any_changed }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.WORKFLOW_TOKEN }}
 
       - name: Check changed charts
         id: changed-files-specific
@@ -62,7 +60,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.WORKFLOW_TOKEN }}
 
       - name: Bump Chart Version
         env:
@@ -90,7 +87,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ needs.bump-versions.outputs.commit_hash }}
-          token: ${{ secrets.WORKFLOW_TOKEN }}
 
       - name: Run helm-docs and push back
         uses: losisin/helm-docs-github-action@v1.2.10
