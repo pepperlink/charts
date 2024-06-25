@@ -95,7 +95,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run helm-docs and push back
-        uses: losisin/helm-docs-github-action@v1.2.10
+        uses: losisin/helm-docs-github-action@v1.2.11
 
       - name: Commit Changes and Push
         id: commit-changes
