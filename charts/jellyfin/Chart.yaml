@@ -6,4 +6,4 @@ type: application
 sources:
   - https://hub.docker.com/r/jellyfin/jellyfin
 # renovate: image=docker.io/jellyfin/jellyfin
-appVersion: "10.9.6"
+appVersion: "10.9.7"
