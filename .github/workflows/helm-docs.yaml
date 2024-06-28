@@ -80,6 +80,7 @@ jobs:
           commit_message: "chore: bump ${{ matrix.charts }} to ${{ env.VERSION }}"
           commit_user_name: "Renovate Bot"
           commit_user_email: "bot@pepperlink.nl"
+          branch: ${{ github.head_ref || github.ref_name }}
 
   docs-and-push:
     name: Generate helm docs and push back
