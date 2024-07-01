@@ -1,0 +1,29 @@
+
+{{- if and .Values.persistence.thisChart.enabled (not .Values.persistence.thisChart.existingClaim) }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "thisChart.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "thisChart.name" . }}
+    helm.sh/chart: {{ include "thisChart.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- with .Values.persistence.thisChart.annotations }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.thisChart.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.thisChart.size | quote }}
+{{- if .Values.persistence.thisChart.storageClass }}
+{{- if (eq "-" .Values.persistence.thisChart.storageClass) }}
+  storageClassName: ""
+{{- else }}
+  storageClassName: "{{ .Values.persistence.thisChart.storageClass }}"
+{{- end }}
+{{- end }}
+{{- end -}}
