@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: sissbruecker/thisChart
+  repository: ghcr.io/tarampampam/error-pages
   pullPolicy: Always
   # -- Overrides the image tag whose default is the chart appVersion.
   tag: ""

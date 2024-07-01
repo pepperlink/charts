@@ -5,5 +5,5 @@ description: Default Backend for Ingress Controller
 type: application
 sources:
   - https://github.com/tarampampam/error-pages
-# renovate: image=tarampampam/error-pages
+# renovate: image=ghcr.io/tarampampam/error-pages
 appVersion: "3.0.0-alpha-1"
