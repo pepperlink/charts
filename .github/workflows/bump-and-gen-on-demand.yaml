@@ -65,8 +65,7 @@ jobs:
           CHART: ${{ matrix.charts }}
         with:
           commit_message: "chore: bump ${{ matrix.charts }} to ${{ env.VERSION }}"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_author: Github Actions <actions@github.com>
           branch: ${{ github.head_ref || github.ref_name }}
           push_options: '--force'
 
