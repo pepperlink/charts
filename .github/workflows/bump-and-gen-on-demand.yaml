@@ -20,7 +20,6 @@ jobs:
         id: set-matrix
         run: |
           set -eux
-          DATA=$(echo ${{ github.event.head_commit.message }} | grep -o '\[.*\]')
           DATA=$(echo \"${{ inputs.chart}}\" | jq -c 'split(",")')
           echo $DATA
           echo "matrix=$DATA" >> "$GITHUB_OUTPUT"
