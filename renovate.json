@@ -40,6 +40,13 @@
       "automerge": true
     },
     {
+      "description": "Add another rule for tarampampam/error-pages",
+      "matchPackageNames": ["default-backend"],
+      "versioning": "loose",
+      "autoApprove": true,
+      "automerge": true
+    },
+    {
       "description": "Group dependencies from Helm charts",
       "matchFileNames": ["**/Chart.yaml"],
       "groupName": "Helm Charts",
