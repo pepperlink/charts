@@ -12,7 +12,7 @@
     "automerge": true
   },
 
-  "gitIgnoredAuthors": ["renovate-bot", "Renovate Bot", "bot@pepperlink.nl", "Renovate Bot <bot@pepperlink.nl>"],
+  "gitIgnoredAuthors": ["github-actions[bot]"],
 
   "major": {
     "dependencyDashboardApproval": true,

@@ -1,14 +1,11 @@
 name: Bump versions and generate docs
 
 on:
-  push:
+  pull_request:
     branches:
-      - 'renovate/**'
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
-      - '!main'     # excludes main
-
+      - main
+    types:
+      - opened
 
 jobs:
   changed-files:
@@ -38,8 +35,6 @@ jobs:
           set -eux
           DATA=$(echo ${{ steps.changed-files-specific.outputs.all_changed_files }} | jq -c '. | map(split("/")[1]) | unique')
           echo $DATA
-          echo changed is ${{ steps.changed-files-specific.outputs.any_changed }}
-          echo actor is ${{ github.actor }}
           echo "matrix=$DATA" >> "$GITHUB_OUTPUT"
 
   bump-versions:
@@ -69,51 +64,19 @@ jobs:
         run: |
           ./scripts/bumpversion-helmchart.sh
 
-      - name: Commit Changes and Push
-        run: |
-          git config --global advice.addIgnoredFile false
-          git config --global user.name 'Renovate Bot'
-          git config --global user.email 'bot@pepperlink.nl'
-          git pull
-          git add -f -v .
-          git commit -am "chore: bump ${{ matrix.charts }} to ${{ env.VERSION }}"
-
-      - name: Push Changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
-          branch: "${{ github.ref_name }}"
-
-  docs-and-push:
-    name: Generate helm docs and push back
-    runs-on: ubuntu-latest
-    needs: [bump-versions]
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Run helm-docs
-        uses: losisin/helm-docs-github-action@v1.2.11
+          uses: losisin/helm-docs-github-action@v1.2.11
 
-      - name: Commit Changes
-        run: |
-          echo ${{ github.ref_name }}
-          git config --global advice.addIgnoredFile false
-          git config --global user.email "bot@pepperlink.nl"
-          git config --global user.name "Renovate Bot"
-          git pull
-          git add -f -v .
-          git commit -a -m 'Updated Helm Charts and Docs for ${{ github.ref_name }}'
-
-      - name: Push Changes
-        uses: ad-m/github-push-action@master
+      - name: Commit Changes and Push
+        id: commit-changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        env:
+          CHART: ${{ matrix.charts }}
         with:
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
-          branch: "${{ github.ref_name }}"
+          commit_message: "chore: bump ${{ matrix.charts }} to ${{ env.VERSION }}"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          branch: ${{ github.head_ref || github.ref_name }}
 
   check:
     name: Check
@@ -121,8 +84,6 @@ jobs:
     needs:
       - changed-files
       - bump-versions
-      - docs-and-push
-    # if: ${{ success() }}
     if: always() && !cancelled() && !contains(needs.*.result, 'failure')
     steps:
       - name: Check
