@@ -1,4 +1,4 @@
-name: Bump versions and generate docs
+name: Bump versions and generate docs on demand
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
   bump-versions:
     name: Update Charts
     runs-on: ubuntu-latest
-    if: ${{ needs.changed-files.outputs.any_changed == 'true' && github.actor == 'renovate[bot]' }}
+    if: ${{ needs.changed-files.outputs.any_changed == 'true' }}
     needs: [changed-files]
     permissions:
       contents: write
