@@ -15,6 +15,19 @@ entries:
     version: 0.1.19
   calibre:
   - apiVersion: v2
+    appVersion: 7.13.0
+    created: "2024-07-02T17:47:40.491233977Z"
+    description: calibre is an organizer and contentserver for books.
+    digest: 41609a0c43fb6f6a66e25e7b67c3d765d853f5a6326097c29281ed7d5d835fdf
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: calibre
+    sources:
+    - https://docs.linuxserver.io/images/docker-calibre
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/calibre-0.1.27/calibre-0.1.27.tgz
+    version: 0.1.27
+  - apiVersion: v2
     appVersion: 7.12.0
     created: "2024-06-16T22:36:41.412958424Z"
     description: calibre is an organizer and contentserver for books.
@@ -100,6 +113,18 @@ entries:
     - https://github.com/pepperlink/charts/releases/download/homepage-0.0.1/homepage-0.0.1.tgz
     version: 0.0.1
   jellyfin:
+  - apiVersion: v2
+    appVersion: 10.9.7
+    created: "2024-07-02T17:47:40.654310593Z"
+    description: Jellyfin Media Server
+    digest: 3dd10bb1eb8c1d0330b661f910acb6f5ca7db5228661cd44bf513bd4b6f1ac0d
+    name: jellyfin
+    sources:
+    - https://hub.docker.com/r/jellyfin/jellyfin
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyfin-0.1.22/jellyfin-0.1.22.tgz
+    version: 0.1.22
   - apiVersion: v2
     appVersion: 10.9.7
     created: "2024-06-27T06:27:47.600435922Z"
@@ -238,6 +263,19 @@ entries:
     version: 0.1.20
   readarr:
   - apiVersion: v2
+    appVersion: 0.3.29-develop
+    created: "2024-07-02T17:47:40.944842211Z"
+    description: readarr is for books.
+    digest: 6ebd8eb7307a6941a73cf02c16ec2419f76af19c342d50a91aab43800997912d
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: readarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-readarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/readarr-0.1.25/readarr-0.1.25.tgz
+    version: 0.1.25
+  - apiVersion: v2
     appVersion: 0.3.28-develop
     created: "2024-06-16T22:36:43.358354247Z"
     description: readarr is for books.
@@ -278,6 +316,21 @@ entries:
     version: 0.1.4
   sonarr:
   - apiVersion: v2
+    appVersion: 4.0.6
+    created: "2024-07-02T17:47:41.123625567Z"
+    description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: e1963d4c5bb2fb556579d291923be9d966be9309fa23d7efd6cc7afd5a6a2043
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: sonarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-sonarr
+    - https://github.com/linuxserver/docker-sonarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/sonarr-0.1.20/sonarr-0.1.20.tgz
+    version: 0.1.20
+  - apiVersion: v2
     appVersion: 4.0.5
     created: "2024-06-16T22:36:43.948494454Z"
     description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -317,4 +370,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-02T07:20:43.138448544Z"
+generated: "2024-07-02T17:47:41.123665051Z"
