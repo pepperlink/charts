@@ -39,6 +39,19 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/calibre-web-0.1.16/calibre-web-0.1.16.tgz
     version: 0.1.16
+  default-backend:
+  - apiVersion: v2
+    appVersion: 3.0.0-alpha-1
+    created: "2024-07-02T07:20:42.790351563Z"
+    description: Default Backend for Ingress Controller
+    digest: 41c46afceb5bba818d142a2dcac44b1f9e1bd8dc140296db667d605f4ac0c59c
+    name: default-backend
+    sources:
+    - https://github.com/tarampampam/error-pages
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/default-backend-0.1.0/default-backend-0.1.0.tgz
+    version: 0.1.0
   deluge:
   - apiVersion: v2
     appVersion: 18.04.1
@@ -304,4 +317,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-06-27T06:27:47.60044534Z"
+generated: "2024-07-02T07:20:43.138448544Z"
