@@ -49,6 +49,7 @@
     {
       "description": "Group dependencies from Helm charts",
       "matchFileNames": ["**/Chart.yaml"],
+      "excludePackageNames": ["default-backend"],
       "groupName": "Helm Charts",
       "groupSlug": "helmcharts",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
