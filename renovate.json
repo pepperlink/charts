@@ -12,7 +12,7 @@
     "automerge": true
   },
 
-  "gitIgnoredAuthors": ["github-actions[bot]"],
+  "gitIgnoredAuthors": ["github-actions[bot]", "Github Actions"],
 
   "major": {
     "dependencyDashboardApproval": true,
@@ -38,6 +38,14 @@
       "groupName": "Helm Charts",
       "groupSlug": "helmcharts",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "autoApprove": true,
+      "automerge": true
+    },
+    {
+      "description": "Group dependencies from Dockerfiles",
+      "matchPackageNames": ["default-backend"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-alpha-(?<pin>\\d+)",
+      "matchUpdateTypes": ["minor", "patch", "pin"],
       "autoApprove": true,
       "automerge": true
     }
