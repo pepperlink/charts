@@ -40,6 +40,14 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "autoApprove": true,
       "automerge": true
+    },
+    {
+      "description": "Group dependencies from Dockerfiles",
+      "matchPackageNames": ["default-backend"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-alpha-(?<pin>\\d+)",
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "autoApprove": true,
+      "automerge": true
     }
   ]
 }
