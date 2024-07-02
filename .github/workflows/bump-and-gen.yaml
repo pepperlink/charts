@@ -58,6 +58,8 @@ jobs:
           fetch-depth: 0
           token: "${{ secrets.GITHUB_TOKEN }}"
           ref: ${{ github.head_ref }}
+      - run: |
+          git pull origin ${{ github.ref_name }}
 
       - name: Bump Chart Version
         env:
