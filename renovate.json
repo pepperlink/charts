@@ -33,18 +33,18 @@
 
   "packageRules": [
     {
+      "description": "Add a rule for tarampampam/error-pages",
+      "matchPackageNames": ["default-backend"],
+      "versioning": "regex:(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-alpha-(?<build>\\d+)",
+      "autoApprove": true,
+      "automerge": true
+    },
+    {
       "description": "Group dependencies from Helm charts",
       "matchFileNames": ["**/Chart.yaml"],
       "groupName": "Helm Charts",
       "groupSlug": "helmcharts",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "autoApprove": true,
-      "automerge": true
-    },
-    {
-      "description": "Group dependencies from Dockerfiles",
-      "matchPackageNames": ["default-backend"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-alpha-(?<build>\\d+)",
       "autoApprove": true,
       "automerge": true
     }
