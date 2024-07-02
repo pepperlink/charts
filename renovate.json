@@ -34,7 +34,7 @@
   "packageRules": [
     {
       "description": "Add a rule for tarampampam/error-pages",
-      "matchPackageNames": ["tarampampam/error-pages"],
+      "matchPackageNames": ["ghcr.io/tarampampam/error-pages"],
       "versioning": "regex:(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-alpha-(?<build>\\d+)",
       "autoApprove": true,
       "automerge": true
