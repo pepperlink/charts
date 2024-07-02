@@ -27,7 +27,6 @@
       "description": "Update docker image references in Chart.yaml",
       "datasourceTemplate": "docker",
       "fileMatch": ["(^|/)Chart\\.yaml$"],
-      "versioning": "docker",
       "matchStrings": [ "#\\s*?renovate:\\s*?image=(?<depName>\\S*?)\\s*?appVersion:\\s*?(?:'|\")(?<currentValue>\\S*?)(?:'|\")" ]
     }
   ],
