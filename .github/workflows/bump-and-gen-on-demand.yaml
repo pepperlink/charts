@@ -42,6 +42,7 @@ jobs:
         with:
           fetch-depth: 0
           token: "${{ secrets.GITHUB_TOKEN }}"
+          ref: ${{ github.head_ref }}
 
       - name: Bump Chart Version
         env:
@@ -52,6 +53,8 @@ jobs:
 
       - name: Run helm-docs
         uses: losisin/helm-docs-github-action@v1.2.11
+        with:
+          chart-search-root: "./charts/${{ matrix.charts }}"
 
       - name: Commit Changes and Push
         id: commit-changes
@@ -63,6 +66,7 @@ jobs:
           commit_user_name: "github-actions[bot]"
           commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
           branch: ${{ github.head_ref || github.ref_name }}
+          push_options: '--force'
 
   check:
     name: Check
