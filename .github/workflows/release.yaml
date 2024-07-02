@@ -4,11 +4,16 @@ on:
   pull_request:
     types:
       - closed
+  workflow_run:
+    workflows:
+      - "Bump versions and generate docs on demand"
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
   release:
-    # if: github.event.pull_request.merged
+    if: github.event.workflow_run.conclusion == 'success'
     permissions:
       contents: write
     runs-on: ubuntu-latest
