@@ -54,6 +54,18 @@ entries:
     version: 0.1.16
   default-backend:
   - apiVersion: v2
+    appVersion: 3.0.0-alpha-3
+    created: "2024-07-03T07:00:41.420870136Z"
+    description: Default Backend for Ingress Controller
+    digest: 71223692bf520e299eec785be1049e23b05bb0b482fd462303874172c7854123
+    name: default-backend
+    sources:
+    - https://github.com/tarampampam/error-pages
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/default-backend-0.1.1/default-backend-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 3.0.0-alpha-1
     created: "2024-07-02T07:20:42.790351563Z"
     description: Default Backend for Ingress Controller
@@ -370,4 +382,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-02T17:47:41.123665051Z"
+generated: "2024-07-03T07:00:41.420906474Z"
