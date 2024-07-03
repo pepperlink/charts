@@ -6,4 +6,4 @@ type: application
 sources:
   - https://github.com/mealie-recipes/mealie/
 # renovate: image=ghcr.io/mealie-recipes/mealie
-appVersion: "v1.10.0"
+appVersion: "v1.10.1"
