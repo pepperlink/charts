@@ -18,6 +18,9 @@ env:
   GITHUB_ACTOR: ${{ github.actor }}
   GITHUB_TRIGGERING_ACTOR: ${{ github.triggering_actor }}
 
+permissions:
+  checks: write
+  contents: write
 
 jobs:
 
@@ -71,8 +74,6 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ needs.changed-files.outputs.any_changed == 'true' && github.actor == 'renovate[bot]' }}
     needs: [changed-files]
-    permissions:
-      pull-requests: write
     strategy:
       max-parallel: 1
       matrix:
