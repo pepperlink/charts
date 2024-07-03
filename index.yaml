@@ -201,6 +201,18 @@ entries:
     version: 0.1.11
   mealie:
   - apiVersion: v2
+    appVersion: v1.10.1
+    created: "2024-07-03T13:15:02.319918317Z"
+    description: mealie has your recipes.
+    digest: 6e256f518911da4991d4e9698907935b6cd4b89c403ca3e16734f90faf6782bd
+    name: mealie
+    sources:
+    - https://github.com/mealie-recipes/mealie/
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/mealie-0.1.4/mealie-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
     appVersion: v1.8.0
     created: "2024-06-16T22:36:42.532660378Z"
     description: mealie has your recipes.
@@ -382,4 +394,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-03T07:00:41.420906474Z"
+generated: "2024-07-03T13:15:02.319970726Z"
