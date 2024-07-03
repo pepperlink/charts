@@ -42,14 +42,13 @@ jobs:
         with:
           fetch-depth: 0
           token: "${{ secrets.GITHUB_TOKEN }}"
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.head_ref || github.ref_name }}
       - run: |
-          git pull origin ${{ github.ref_name }}
+          git pull origin ${{ github.head_ref || github.ref_name }}
 
       - name: Bump Chart Version
         env:
           CHART: ${{ matrix.charts }}
-          MESSAGE: ${{ github.event.head_commit.message }}
         run: |
           ./scripts/bumpversion-helmchart.sh
 
