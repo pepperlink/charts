@@ -1,9 +1,9 @@
 apiVersion: v2
 name: mealie
-version: "0.1.5"
+version: "0.1.6"
 description: mealie has your recipes.
 type: application
 sources:
   - https://github.com/mealie-recipes/mealie/
 # renovate: image=ghcr.io/mealie-recipes/mealie
-appVersion: "v1.10.1"
+appVersion: "v1.10.2"
