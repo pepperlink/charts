@@ -1,6 +1,6 @@
 apiVersion: v2
 name: mealie
-version: "0.1.5"
+version: "0.1.6"
 description: mealie has your recipes.
 type: application
 sources:
