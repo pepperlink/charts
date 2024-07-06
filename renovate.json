@@ -12,7 +12,7 @@
     "automerge": true
   },
 
-  "gitIgnoredAuthors": ["github-actions[bot]", "actions-user"],
+  "gitIgnoredAuthors": ["github-actions[bot]", "actions-user", "Github Actions", "actios@github.com"],
 
   "major": {
     "dependencyDashboardApproval": true,
