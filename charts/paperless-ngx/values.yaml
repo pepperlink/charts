@@ -1,0 +1,132 @@
+image:
+  repository: ghcr.io/paperless-ngx/paperless-ngx
+  # -- The image tag to pull. Defaults to the chart's appVersion.
+  tag: ""
+
+env:
+  # -- Required. Set the timezone for the chart.
+  TZ: "UTC"
+
+serviceAccount:
+  create: true
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    controller: main
+    ports:
+      http:
+        port: 8000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    enabled: false
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: 64m
+    # hosts:
+    #   - host: chart-example.local
+    #     paths:
+    #       - path: /
+    # tls:
+    #   - secretName: chart-example.local
+    #     hosts:
+    #       - chart-example.local
+
+persistence:
+  # -- Configure data volume settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  data:
+    enabled: false
+    retain: true
+    mountPath: /usr/src/paperless/data
+    accessMode: ReadWriteOnce
+    size: 1Gi
+  # -- Configure media volume settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  media:
+    enabled: true
+    retain: true
+    mountPath: /usr/src/paperless/media
+    accessMode: ReadWriteOnce
+    size: 1Gi
+  # -- Configure export volume settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  export:
+    enabled: true
+    retain: true
+    mountPath: /usr/src/paperless/export
+    accessMode: ReadWriteOnce
+    size: 1Gi
+  # -- Configure consume volume settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  consume:
+    enabled: true
+    retain: true
+    mountPath: /usr/src/paperless/consume
+    accessMode: ReadWriteOnce
+    size: 1Gi
+
+# -- Enable and configure postgresql database subchart under this key.
+#    If enabled, the app's db envs will be set for you.
+#    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/postgresql)
+#    If you choose not to use the included chart, you can set the environment
+#    variables manually in the `paperless-config` section.
+# @default -- See [values.yaml](./values.yaml)
+postgresql:
+  enabled: false
+  auth:
+    database: paperless
+    postgresPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi
+
+# -- Enable and configure mariadb database subchart under this key.
+#    If enabled, the app's db envs will be set for you.
+#    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb)
+#    If you choose not to use the included chart, you can set the environment
+#    variables manually in the `paperless-config` section.
+# @default -- See [values.yaml](./values.yaml)
+mariadb:
+  enabled: false
+  auth:
+    database: paperless
+    username: paperless
+    password: changeme
+    rootPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi
+
+# -- Enable and configure redis subchart under this key.
+#    If enabled, the app's Redis env will be set for you.
+#    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/redis)
+#    If you choose not to use the included chart, you can set the environment
+#    variables manually in the `paperless-config` section.
+# @default -- See [values.yaml](./values.yaml)
+redis:
+  enabled: false
+  auth:
+    enabled: true
+    username: ""
+    # Use an existing secret for redis auth. Do this if you're using Argo to manage your instance or otherwise using helm template under the hood
+    #     The secret name can vary, but the password key must be redis-password.
+    # existingSecret: paperless-redis
+    # existingSecretPasswordKey: redis-password
+  master:
+    persistence:
+      enabled: false
+  replica:
+    replicaCount: 0
+
+# -- Paperless-ngx configuration settings. You can use any env var that is described in the official documentation.
+#    [[ref]](https://docs.paperless-ngx.com/configuration/)
+config:
+  # PAPERLESS_SECRET_KEY=<key>
