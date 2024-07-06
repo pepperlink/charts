@@ -33,8 +33,8 @@
 
   "packageRules": [
     {
-      "description": "Add a rule for tarampampam/error-pages",
-      "matchPackageNames": ["ghcr.io/tarampampam/error-pages"],
+      "description": "Example rule for alpha releases",
+      "matchPackageNames": ["ghcr.io/example/package"],
       "versioning": "regex:(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-alpha-(?<build>\\d+)",
       "autoApprove": true,
       "automerge": true
