@@ -6,4 +6,4 @@ type: application
 sources:
   - https://github.com/tarampampam/error-pages
 # renovate: image=ghcr.io/tarampampam/error-pages
-appVersion: "3.0.0-alpha-3"
+appVersion: "3.1.0"
