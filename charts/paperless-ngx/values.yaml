@@ -56,31 +56,31 @@ persistence:
   data:
     enabled: false
     retain: true
-    mountPath: /usr/src/paperless/data
+    path: /usr/src/paperless/data
     accessMode: ReadWriteOnce
     size: 1Gi
   # -- Configure media volume settings for the chart under this key.
   # @default -- See [values.yaml](./values.yaml)
   media:
-    enabled: true
+    enabled: false
     retain: true
-    mountPath: /usr/src/paperless/media
+    path: /usr/src/paperless/media
     accessMode: ReadWriteOnce
     size: 1Gi
   # -- Configure export volume settings for the chart under this key.
   # @default -- See [values.yaml](./values.yaml)
   export:
-    enabled: true
+    enabled: false
     retain: true
-    mountPath: /usr/src/paperless/export
+    path: /usr/src/paperless/export
     accessMode: ReadWriteOnce
     size: 1Gi
   # -- Configure consume volume settings for the chart under this key.
   # @default -- See [values.yaml](./values.yaml)
   consume:
-    enabled: true
+    enabled: false
     retain: true
-    mountPath: /usr/src/paperless/consume
+    path: /usr/src/paperless/consume
     accessMode: ReadWriteOnce
     size: 1Gi
 
