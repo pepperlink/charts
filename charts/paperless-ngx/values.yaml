@@ -1,14 +1,25 @@
-image:
-  repository: ghcr.io/paperless-ngx/paperless-ngx
-  # -- The image tag to pull. Defaults to the chart's appVersion.
-  tag: ""
-
-env:
-  # -- Required. Set the timezone for the chart.
-  TZ: "UTC"
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: ghcr.io/paperless-ngx/paperless-ngx
+          tag: ""
+          envFrom:
+            - secretRef:
+                name: paperless-secret
+        # -- Any extra configuration setting for Paperless NGX are defined in env vars.
+        #    You can find the full list of env vars in the [Paperless NGX docs](https://docs.paperless-ngx.com/configuration/)
+        env:
+          # -- Required: timezone for the app
+          TZ: "UTC"
+          PAPERLESS_SECRET_KEY: z9tb33ftivxjzbxv3rxa178plrmfx869
+          PAPERLESS_OCR_LANGUAGE: "nld+eng"
+          PAPERLESS_OCR_MODE: skip
+          PAPERLESS_OCR_SKIP_ARCHIVE_FILE: with_text
 
 serviceAccount:
-  create: true
+  create: false
 
 service:
   # -- Configures service settings for the chart.
@@ -25,15 +36,19 @@ ingress:
   main:
     enabled: false
     annotations:
-      nginx.ingress.kubernetes.io/proxy-body-size: 64m
-    # hosts:
-    #   - host: chart-example.local
-    #     paths:
-    #       - path: /
-    # tls:
-    #   - secretName: chart-example.local
-    #     hosts:
-    #       - chart-example.local
+      # nginx.ingress.kubernetes.io/proxy-body-size: 64m
+      # cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - host: chart-example.local
+        paths:
+          - path: /
+            service:
+              identifier: main
+              port: http
+    tls:
+      - secretName: chart-example.local
+        hosts:
+          - chart-example.local
 
 persistence:
   # -- Configure data volume settings for the chart under this key.
@@ -125,8 +140,3 @@ redis:
       enabled: false
   replica:
     replicaCount: 0
-
-# -- Paperless-ngx configuration settings. You can use any env var that is described in the official documentation.
-#    [[ref]](https://docs.paperless-ngx.com/configuration/)
-config:
-  # PAPERLESS_SECRET_KEY=<key>

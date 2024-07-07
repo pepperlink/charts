@@ -6,7 +6,6 @@
 global:
   nameOverride: "{{ .Release.Name }}"
 {{ end }}
-# Container to use
 controllers:
   main:
     enabled: true
@@ -15,26 +14,24 @@ controllers:
       main:
         image:
           repository: ghcr.io/paperless-ngx/paperless-ngx
-          {{ if not .Values.image.tag -}}
+          {{ if not .Values.controllers.main.containers.main.image.tag -}}
           tag: "{{ .Chart.AppVersion }}"
           {{- end }}
 {{- end -}}
 
-{{- define "paperless-ngx.Values" -}}
+{{- $_ := mergeOverwrite .Values (include "paperless-ngx.hardcodedValues" . | fromYaml) -}}
+
+{{- define "paperless-nginx.values" -}}
 controllers:
   main:
     containers:
       main:
         env:
-          PAPERLESS_TIME_ZONE: {{ .Values.env.TZ }}
+          PAPERLESS_TIME_ZONE: {{ .Values.controllers.main.containers.main.env.TZ }}
           PAPERLESS_PORT: {{ quote .Values.service.main.ports.http.port }}
-          {{- if .Values.config -}}
-          {{ .Values.config | toYaml }}
-          {{- end }}
           {{- with .Values.ingress.main }}{{- if and .enabled .hosts }}
           PAPERLESS_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
           {{- end }}{{- end }}
-
           {{- if .Values.postgresql.enabled }}
           {{- with .Values.postgresql }}
           PAPERLESS_DBENGINE: postgresql
@@ -70,9 +67,7 @@ controllers:
           {{- end }}
 {{- end -}}
 
-{{- $_ := mergeOverwrite .Values (include "paperless-ngx.hardcodedValues" . | fromYaml) -}}
-{{- $_ := mergeOverwrite .Values (include "paperless-ngx.Values" . | fromYaml) -}}
-
+{{- $_ := mergeOverwrite .Values (include "paperless-nginx.values" . | fromYaml) -}}
 
 {{/* Render the templates */}}
 {{ include "bjw-s.common.loader.generate" . }}
