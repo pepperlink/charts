@@ -123,7 +123,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
           token: "${{ secrets.WORKFLOW_TOKEN }}"
           ref: ${{ github.ref_name}}
       - name: Commit to the PR branch to make status check pass
