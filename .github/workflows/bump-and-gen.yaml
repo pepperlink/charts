@@ -125,9 +125,11 @@ jobs:
       - bump-versions
     if: always() && !cancelled() && !contains(needs.*.result, 'failure')
     env:
-      TOKEN: ${{ secrets.CHECK_TOKEN }}
+      TOKEN: ${{ secrets.GITHUB_TOKEN }}
       REF: ${{ github.head_ref || github.ref_name }}
       REPO: ${{ github.repository }}
+    permissions:
+      statuses: write
     steps:
       - name: Check
         run: |
