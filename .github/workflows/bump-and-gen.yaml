@@ -1,11 +1,16 @@
 name: Bump versions and generate docs
 
 on:
-  pull_request:
+  # pull_request:
+  #   branches:
+  #     - main
+  #   types:
+  #     - opened
+  #   paths:
+  #     - 'charts/**'
+  push:
     branches:
-      - main
-    types:
-      - opened
+      - renovate/**
     paths:
       - 'charts/**'
 
@@ -120,15 +125,17 @@ jobs:
       - bump-versions
     if: always() && !cancelled() && !contains(needs.*.result, 'failure')
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: "${{ secrets.WORKFLOW_TOKEN }}"
-          ref: ${{ github.head_ref || github.ref_name }}
-      - name: Commit to the PR branch to make status check pass
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit --allow-empty -m "all checks passed for branch ${{ github.ref_name }} [skip ci]"
-          git push origin ${{ github.head_ref || github.ref_name }}
+      - name: Pass
+        run: echo "All checks passed"
+    #   - name: Checkout
+    #     uses: actions/checkout@v4
+    #     with:
+    #       fetch-depth: 0
+    #       token: "${{ secrets.WORKFLOW_TOKEN }}"
+    #       ref: ${{ github.head_ref || github.ref_name }}
+    #   - name: Commit to the PR branch to make status check pass
+    #     run: |
+    #       git config --global user.name "github-actions[bot]"
+    #       git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    #       git commit --allow-empty -m "all checks passed for branch ${{ github.ref_name }} [skip ci]"
+    #       git push origin ${{ github.head_ref || github.ref_name }}
