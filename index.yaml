@@ -54,6 +54,18 @@ entries:
     version: 0.1.16
   default-backend:
   - apiVersion: v2
+    appVersion: 3.2.0
+    created: "2024-07-10T21:48:39.13802307Z"
+    description: Default Backend for Ingress Controller
+    digest: 1a369ac4432a35d0252914d9958ae2d8ebd25a3d402b8791bce6ba994b2dbf74
+    name: default-backend
+    sources:
+    - https://github.com/tarampampam/error-pages
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/default-backend-0.1.3/default-backend-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     appVersion: 3.0.0-alpha-3
     created: "2024-07-03T07:00:41.420870136Z"
     description: Default Backend for Ingress Controller
@@ -417,6 +429,21 @@ entries:
     version: 0.1.6
   radarr:
   - apiVersion: v2
+    appVersion: 5.7.0
+    created: "2024-07-10T21:48:39.416247893Z"
+    description: radarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: f6c87241c7da057cda16bbb5f779e2cfda0d49ff96ac93aef789a988dac0bf39
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: radarr
+    sources:
+    - https://github.com/linuxserver/docker-radarr
+    - https://docs.linuxserver.io/images/docker-radarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/radarr-0.1.22/radarr-0.1.22.tgz
+    version: 0.1.22
+  - apiVersion: v2
     appVersion: 5.6.0
     created: "2024-06-16T22:36:43.144328409Z"
     description: radarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -539,4 +566,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-07T20:26:27.41378292Z"
+generated: "2024-07-10T21:48:39.548129991Z"
