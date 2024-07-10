@@ -40,10 +40,8 @@
       "automerge": true
     },
     {
-      "description": "Group dependencies from Helm charts",
+      "description": "Dependencies from Helm charts",
       "matchFileNames": ["**/Chart.yaml"],
-      "groupName": "Helm Charts",
-      "groupSlug": "helmcharts",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "autoApprove": true,
       "automerge": true
