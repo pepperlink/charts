@@ -129,7 +129,7 @@ jobs:
       REF: ${{ github.head_ref || github.ref_name }}
       REPO: ${{ github.repository }}
     steps:
-      - name: update status
+      - name: Check
         run: |
           export REF=$(echo $REF|jq -rR '@uri')
           SHA=$(curl -L \
