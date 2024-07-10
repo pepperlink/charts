@@ -1,9 +1,9 @@
 apiVersion: v2
 name: default-backend
-version: "0.1.1"
+version: "0.1.2"
 description: Default Backend for Ingress Controller
 type: application
 sources:
   - https://github.com/tarampampam/error-pages
 # renovate: image=ghcr.io/tarampampam/error-pages
-appVersion: "3.2.0"
+appVersion: "3.0.0"
