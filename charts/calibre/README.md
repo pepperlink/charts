@@ -1,6 +1,6 @@
 # calibre
 
-![Version: 0.1.27](https://img.shields.io/badge/Version-0.1.27-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 7.13.0](https://img.shields.io/badge/AppVersion-7.13.0-informational?style=flat-square)
+![Version: 0.1.28](https://img.shields.io/badge/Version-0.1.28-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 7.14.0](https://img.shields.io/badge/AppVersion-7.14.0-informational?style=flat-square)
 
 calibre is an organizer and contentserver for books.
 
@@ -24,7 +24,7 @@ calibre is an organizer and contentserver for books.
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"Always"` |  |
 | image.repository | string | `"lscr.io/linuxserver/calibre"` |  |
-| image.tag | string | `"latest"` | Overrides the image tag whose default is the chart appVersion. |
+| image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.className | string | `""` |  |
