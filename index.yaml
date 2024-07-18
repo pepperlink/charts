@@ -554,6 +554,21 @@ entries:
     version: 0.1.4
   sonarr:
   - apiVersion: v2
+    appVersion: 4.0.8
+    created: "2024-07-18T00:56:51.545654355Z"
+    description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 74c700950149b7c27d949bb49352156932ca2add7f98e7620eee33dcde196297
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: sonarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-sonarr
+    - https://github.com/linuxserver/docker-sonarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/sonarr-0.1.22/sonarr-0.1.22.tgz
+    version: 0.1.22
+  - apiVersion: v2
     appVersion: 4.0.7
     created: "2024-07-15T03:59:59.496201846Z"
     description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -623,4 +638,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-17T23:43:55.294977886Z"
+generated: "2024-07-18T00:56:51.545693248Z"
