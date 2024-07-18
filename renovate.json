@@ -53,6 +53,11 @@
       "hostType": "docker",
       "matchHost": "ghcr.io/cathelijne/japan",
       "token": "{{ secrets.READ_PACKAGES }}"
+    },
+    {
+      "hostType": "helm",
+      "matchHost": "ghcr.io/cathelijne/japan",
+      "token": "{{ secrets.READ_PACKAGES }}"
     }
   ]
 }
