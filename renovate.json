@@ -46,5 +46,13 @@
       "autoApprove": true,
       "automerge": true
     }
+  ],
+
+  "hostRules": [
+    {
+      "hostType": "docker",
+      "matchHost": "ghcr.io",
+      "token": "{{ secrets.READ_PACKAGES }}"
+    }
   ]
 }
