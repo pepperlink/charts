@@ -256,6 +256,18 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/linkding-0.1.11/linkding-0.1.11.tgz
     version: 0.1.11
+  - apiVersion: v2
+    appVersion: 2024.07.17.2213
+    created: "2024-07-18T18:32:22.030178309Z"
+    description: Website for Japan 2024
+    digest: 0d8845c3378a0b3de6b5747d9c03dba79b9a6735ccf458ce8d780f764efa8da5
+    name: linkding
+    sources:
+    - https://github.com/cathelijne/japan
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/linkding-0.0.1/linkding-0.0.1.tgz
+    version: 0.0.1
   mealie:
   - apiVersion: v2
     appVersion: v1.10.2
@@ -654,4 +666,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-18T07:26:59.266891664Z"
+generated: "2024-07-18T18:32:22.2962256Z"
