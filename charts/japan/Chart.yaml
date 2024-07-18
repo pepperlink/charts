@@ -1,9 +1,9 @@
 apiVersion: v2
 name: linkding
-version: "0.1.12"
+version: "0.0.1"
 description: Website for Japan 2024
 type: application
 sources:
-  - https://github.com/sissbruecker/linkding
-# renovate: image=sissbruecker/linkding
+  - https://github.com/cathelijne/japan
+# renovate: image=ghcr.io/cathelijne/japan
 appVersion: "2024.07.17.2213"
