@@ -1,4 +1,4 @@
-# Default values for linkding.
+# Default values for japan.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -51,7 +51,7 @@ resources: {}
   #   memory: 128Mi
 
 persistence:
-  linkding:
+  japan:
     enabled: false
     # storageClass: "-"
     annotations: {}

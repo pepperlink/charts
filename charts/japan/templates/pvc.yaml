@@ -1,29 +1,29 @@
 
-{{- if and .Values.persistence.linkding.enabled (not .Values.persistence.linkding.existingClaim) }}
+{{- if and .Values.persistence.japan.enabled (not .Values.persistence.japan.existingClaim) }}
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ template "linkding.fullname" . }}
+  name: {{ template "japan.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "linkding.name" . }}
-    helm.sh/chart: {{ include "linkding.chart" . }}
+    app.kubernetes.io/name: {{ include "japan.name" . }}
+    helm.sh/chart: {{ include "japan.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
-{{- with .Values.persistence.linkding.annotations }}
+{{- with .Values.persistence.japan.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
 {{- end }}
 spec:
   accessModes:
-    - {{ .Values.persistence.linkding.accessMode | quote }}
+    - {{ .Values.persistence.japan.accessMode | quote }}
   resources:
     requests:
-      storage: {{ .Values.persistence.linkding.size | quote }}
-{{- if .Values.persistence.linkding.storageClass }}
-{{- if (eq "-" .Values.persistence.linkding.storageClass) }}
+      storage: {{ .Values.persistence.japan.size | quote }}
+{{- if .Values.persistence.japan.storageClass }}
+{{- if (eq "-" .Values.persistence.japan.storageClass) }}
   storageClassName: ""
 {{- else }}
-  storageClassName: "{{ .Values.persistence.linkding.storageClass }}"
+  storageClassName: "{{ .Values.persistence.japan.storageClass }}"
 {{- end }}
 {{- end }}
 {{- end -}}

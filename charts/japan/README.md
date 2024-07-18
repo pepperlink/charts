@@ -1,12 +1,12 @@
-# linkding
+# japan
 
 ![Version: 0.1.12](https://img.shields.io/badge/Version-0.1.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.31.0](https://img.shields.io/badge/AppVersion-1.31.0-informational?style=flat-square)
 
-LinkDing
+japan
 
 ## Source Code
 
-* <https://github.com/sissbruecker/linkding>
+* <https://github.com/sissbruecker/japan>
 
 ## Values
 
@@ -17,10 +17,10 @@ LinkDing
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
-| envFrom | list | `[{"configMapRef":{"name":"linkding-config"}}]` | Linkding is configured with envvars. Use existing secrets or configmap. See https://github.com/sissbruecker/linkding/blob/master/docs/Options.md |
+| envFrom | list | `[{"configMapRef":{"name":"japan-config"}}]` | japan is configured with envvars. Use existing secrets or configmap. See https://github.com/sissbruecker/japan/blob/master/docs/Options.md |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"Always"` |  |
-| image.repository | string | `"sissbruecker/linkding"` |  |
+| image.repository | string | `"sissbruecker/japan"` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
@@ -32,10 +32,10 @@ LinkDing
 | ingress.tls | list | `[]` |  |
 | nameOverride | string | `""` |  |
 | nodeSelector | object | `{}` |  |
-| persistence.linkding.accessMode | string | `"ReadWriteOnce"` |  |
-| persistence.linkding.annotations | object | `{}` |  |
-| persistence.linkding.enabled | bool | `false` |  |
-| persistence.linkding.size | string | `"1Gi"` |  |
+| persistence.japan.accessMode | string | `"ReadWriteOnce"` |  |
+| persistence.japan.annotations | object | `{}` |  |
+| persistence.japan.enabled | bool | `false` |  |
+| persistence.japan.size | string | `"1Gi"` |  |
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
 | replicaCount | int | `1` |  |
