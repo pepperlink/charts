@@ -1,6 +1,6 @@
 apiVersion: v2
 name: sonarr
-version: "0.1.20"
+version: "0.1.22"
 description: sonarr is a lightweight, Free Software, cross-platform BitTorrent client.
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
@@ -8,4 +8,4 @@ sources:
   - https://docs.linuxserver.io/images/docker-sonarr
   - https://github.com/linuxserver/docker-sonarr
 # renovate: image=lscr.io/linuxserver/sonarr
-appVersion: "4.0.6"
+appVersion: "4.0.8"
