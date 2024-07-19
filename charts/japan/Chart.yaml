@@ -1,6 +1,6 @@
 apiVersion: v2
 name: japan
-version: "0.0.5"
+version: "0.0.6"
 description: Website for Japan 2024
 type: application
 sources:

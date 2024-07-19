@@ -1,6 +1,6 @@
 # japan
 
-![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2024.07.19.0644](https://img.shields.io/badge/AppVersion-2024.07.19.0644-informational?style=flat-square)
+![Version: 0.0.6](https://img.shields.io/badge/Version-0.0.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2024.07.19.1632](https://img.shields.io/badge/AppVersion-2024.07.19.1632-informational?style=flat-square)
 
 Website for Japan 2024
 
@@ -20,7 +20,7 @@ Website for Japan 2024
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"Always"` |  |
 | image.repository | string | `"ghcr.io/cathelijne/japan"` |  |
-| image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
+| image.tag | string | `"latest"` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.className | string | `""` |  |
