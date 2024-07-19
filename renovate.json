@@ -52,7 +52,8 @@
     {
       "hostType": "docker",
       "matchHost": "ghcr.io/cathelijne",
-      "token": "{{ secrets.READ_PACKAGES }}"
+      "username": "cathelijne",
+      "password": "{{ secrets.READ_PACKAGES }}"
     }
   ]
 }
