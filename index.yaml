@@ -662,6 +662,19 @@ entries:
     version: 0.1.20
   readarr:
   - apiVersion: v2
+    appVersion: 0.3.32-develop
+    created: "2024-07-25T05:58:39.619513715Z"
+    description: readarr is for books.
+    digest: 113d750f9a83c1c80ddec3a2c74ad5c02e48adbc50527e2f64f3fce2f7a6307e
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: readarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-readarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/readarr-0.1.27/readarr-0.1.27.tgz
+    version: 0.1.27
+  - apiVersion: v2
     appVersion: 0.3.31-develop
     created: "2024-07-14T11:23:10.68981319Z"
     description: readarr is for books.
@@ -812,4 +825,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-25T05:57:33.32991693Z"
+generated: "2024-07-25T05:58:39.619605727Z"
