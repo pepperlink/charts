@@ -196,6 +196,18 @@ entries:
     version: 0.0.1
   japan:
   - apiVersion: v2
+    appVersion: 2024.07.27.0858
+    created: "2024-07-27T17:28:55.756460989Z"
+    description: Website for Japan 2024
+    digest: 47fcb2b43e1dd61ac5ebf3c720a14ca7af0b4409c25a4d823b64e645695ed2eb
+    name: japan
+    sources:
+    - https://github.com/cathelijne/japan
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/japan-0.0.11/japan-0.0.11.tgz
+    version: 0.0.11
+  - apiVersion: v2
     appVersion: 2024.07.24.0738
     created: "2024-07-25T05:57:33.329809999Z"
     description: Website for Japan 2024
@@ -825,4 +837,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-07-25T05:58:39.619605727Z"
+generated: "2024-07-27T17:28:55.756573771Z"
