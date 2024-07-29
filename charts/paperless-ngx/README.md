@@ -1,17 +1,8 @@
-# Paperless-ngx
+# paperless-ngx
 
-<img src="https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg" align="right" width="92" alt="paperless-ngx logo">
-
-![Version: 0.18.1](https://img.shields.io/badge/Version-0.18.1-informational?style=flat)
-![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 2.8.6](https://img.shields.io/badge/AppVersion-2.8.6-informational?style=flat)
+![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.8.6](https://img.shields.io/badge/AppVersion-2.8.6-informational?style=flat-square)
 
 A community-supported supercharged version of paperless: scan, index and archive all your physical documents
-
-**Homepage:** <https://charts.gabe565.com/charts/paperless-ngx/>
-
-**This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=paperless-ngx&version=0.18.1)**
 
 ## Source Code
 
@@ -19,92 +10,52 @@ A community-supported supercharged version of paperless: scan, index and archive
 
 ## Requirements
 
-Kubernetes: `>=1.22.0-0`
-
-## Dependencies
-
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | mariadb | 16.0.2 |
-| <https://charts.bitnami.com/bitnami> | postgresql | 14.0.5 |
-| <https://charts.bitnami.com/bitnami> | redis | 18.6.4 |
-
-## Installing the Chart
-
-To install the chart with the release name `paperless-ngx`
-
-### OCI (Recommended)
-
-```console
-helm install paperless-ngx oci://ghcr.io/gabe565/charts/paperless-ngx
-```
-
-### Traditional
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install paperless-ngx gabe565/paperless-ngx
-```
-
-## Uninstalling the Chart
-
-To uninstall the `paperless-ngx` deployment
-
-```console
-helm uninstall paperless-ngx
-```
-
-The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
-
-## Configuration
-
-Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common/values.yaml) from the [bjw-s common library](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common).
-
-Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
-
-```console
-helm install paperless-ngx \
-  --set env.TZ="America/New York" \
-    gabe565/paperless-ngx
-```
-
-Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
-
-```console
-helm install paperless-ngx gabe565/paperless-ngx -f values.yaml
-```
-
-## Custom configuration
-
-### Database Installation
-
-Paperless-ngx supports PostgreSQL and MariaDB.
-This chart can install PostgreSQL or MariaDB and configure Paperless-ngx automatically.
-See each database section in [`values.yaml`](./values.yaml) for configuration examples.
+| https://bjw-s.github.io/helm-charts | common | 3.3.0 |
+| https://charts.bitnami.com/bitnami | mariadb | 16.5.0 |
+| https://charts.bitnami.com/bitnami | postgresql | 14.3.3 |
+| https://charts.bitnami.com/bitnami | redis | 18.19.4 |
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common)
-
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| env | object | See [values.yaml](./values.yaml) | Environment variables [[ref]](https://docs.paperless-ngx.com/configuration/) |
-| env.TZ | string | `"UTC"` | Set the container timezone |
-| image.pullPolicy | string | `"IfNotPresent"` | Image pull policy |
-| image.repository | string | `"ghcr.io/paperless-ngx/paperless-ngx"` | Image repository |
-| image.tag | string | `"2.8.6"` | Image tag |
+| controllers.main.containers.main.env | object | `{"TZ":"UTC"}` | Any extra configuration setting for Paperless NGX are defined in env vars.    You can find the full list of env vars in the [Paperless NGX docs](https://docs.paperless-ngx.com/configuration/) |
+| controllers.main.containers.main.env.TZ | string | `"UTC"` | Required: timezone for the app |
+| controllers.main.containers.main.image.envFrom | list | `[{"secretRef":{"name":"paperless-secret"}}]` | Sensitive configurtion settings are defined in a secret.    TODO: create secret from this chart. For now, create it manually |
+| controllers.main.containers.main.image.repository | string | `"ghcr.io/paperless-ngx/paperless-ngx"` |  |
+| controllers.main.containers.main.image.tag | string | `""` |  |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    If enabled, the app's db envs will be set for you.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb) |
-| persistence.consume | object | See [values.yaml](./values.yaml) | Configure consume volume settings for the chart under this key. |
-| persistence.data | object | See [values.yaml](./values.yaml) | Configure data volume settings for the chart under this key. |
-| persistence.export | object | See [values.yaml](./values.yaml) | Configure export volume settings for the chart under this key. |
-| persistence.media | object | See [values.yaml](./values.yaml) | Configure media volume settings for the chart under this key. |
-| postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    If enabled, the app's db envs will be set for you.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/postgresql) |
-| redis | object | See [values.yaml](./values.yaml) | Enable and configure redis subchart under this key.    If enabled, the app's Redis env will be set for you.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/redis) |
+| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    If enabled, the app's db envs will be set for you.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb)    If you choose not to use the included chart, you can set the environment    variables manually in the `paperless-config` section. |
+| persistence.consume.accessMode | string | `"ReadWriteOnce"` |  |
+| persistence.consume.advancedMounts.main.main[0].path | string | `"/usr/src/paperless/consume"` |  |
+| persistence.consume.enabled | bool | `false` |  |
+| persistence.consume.path | string | `"/usr/src/paperless/consume"` |  |
+| persistence.consume.retain | bool | `true` |  |
+| persistence.consume.size | string | `"1Gi"` |  |
+| persistence.data.accessMode | string | `"ReadWriteOnce"` |  |
+| persistence.data.advancedMounts.main.main[0].path | string | `"/usr/src/paperless/data"` |  |
+| persistence.data.enabled | bool | `false` |  |
+| persistence.data.path | string | `"/usr/src/paperless/data"` |  |
+| persistence.data.retain | bool | `true` |  |
+| persistence.data.size | string | `"1Gi"` |  |
+| persistence.export.accessMode | string | `"ReadWriteOnce"` |  |
+| persistence.export.advancedMounts.main.main[0].path | string | `"/usr/src/paperless/export"` |  |
+| persistence.export.enabled | bool | `false` |  |
+| persistence.export.path | string | `"/usr/src/paperless/export"` |  |
+| persistence.export.retain | bool | `true` |  |
+| persistence.export.size | string | `"10Gi"` |  |
+| persistence.media.accessMode | string | `"ReadWriteOnce"` |  |
+| persistence.media.advancedMounts.main.main[0].path | string | `"/usr/src/paperless/media"` |  |
+| persistence.media.enabled | bool | `false` |  |
+| persistence.media.path | string | `"/usr/src/paperless/media"` |  |
+| persistence.media.retain | bool | `true` |  |
+| persistence.media.size | string | `"10Gi"` |  |
+| postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    If enabled, the app's db envs will be set for you.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/postgresql)    If you choose not to use the included chart, you can set the environment    variables manually in the `paperless-config` section. |
+| redis | object | See [values.yaml](./values.yaml) | Enable and configure redis subchart under this key.    If enabled, the app's Redis env will be set for you.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/redis)    If you choose not to use the included chart, you can set the environment    variables manually in the `paperless-config` section. |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
+| serviceAccount.create | bool | `false` |  |
 
----
-Autogenerated from chart metadata using [helm-docs](https://github.com/norwoodj/helm-docs)
+----------------------------------------------
+Autogenerated from chart metadata using [helm-docs v1.14.2](https://github.com/norwoodj/helm-docs/releases/v1.14.2)
