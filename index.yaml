@@ -528,6 +528,36 @@ entries:
   paperless-ngx:
   - apiVersion: v2
     appVersion: 2.8.6
+    created: "2024-08-01T09:31:21.378056835Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: 451a3db3c83e51aaec1a9da5eec4dc55dfb3f28f99c135eddf6e2a7d5af37b28
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/paperless-ngx-0.0.7/paperless-ngx-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 2.8.6
     created: "2024-07-30T09:15:45.652738747Z"
     dependencies:
     - name: common
@@ -976,4 +1006,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-08-01T04:49:04.629145148Z"
+generated: "2024-08-01T09:31:21.378153266Z"
