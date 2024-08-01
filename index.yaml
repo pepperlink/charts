@@ -15,6 +15,19 @@ entries:
     version: 0.1.19
   calibre:
   - apiVersion: v2
+    appVersion: 7.16.0
+    created: "2024-08-01T04:49:04.629045991Z"
+    description: calibre is an organizer and contentserver for books.
+    digest: 9f8478251b12c0bb57398e4de006b512d3f900c3b6144054ccc5ecdb4cc12ce7
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: calibre
+    sources:
+    - https://docs.linuxserver.io/images/docker-calibre
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/calibre-0.1.30/calibre-0.1.30.tgz
+    version: 0.1.30
+  - apiVersion: v2
     appVersion: 7.15.0
     created: "2024-07-19T04:57:39.232786725Z"
     description: calibre is an organizer and contentserver for books.
@@ -963,4 +976,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-08-01T04:47:32.27378588Z"
+generated: "2024-08-01T04:49:04.629145148Z"
