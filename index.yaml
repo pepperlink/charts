@@ -80,6 +80,19 @@ entries:
     version: 0.1.26
   calibre-web:
   - apiVersion: v2
+    appVersion: 0.6.23
+    created: "2024-08-08T02:54:00.287309238Z"
+    description: calibre-web is a web front end for books.
+    digest: bbd5e3060a02a73fb7b23b5c59790b6a79fb776918baf38e88bd04b8d671be53
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: calibre-web
+    sources:
+    - https://docs.linuxserver.io/images/docker-calibre-web
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/calibre-web-0.1.17/calibre-web-0.1.17.tgz
+    version: 0.1.17
+  - apiVersion: v2
     appVersion: 0.6.21
     created: "2024-06-16T22:36:41.575122985Z"
     description: calibre-web is a web front end for books.
@@ -1030,4 +1043,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-08-08T02:52:40.343419022Z"
+generated: "2024-08-08T02:54:00.287433179Z"
