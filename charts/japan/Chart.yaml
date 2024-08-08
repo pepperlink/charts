@@ -6,4 +6,4 @@ type: application
 sources:
   - https://github.com/cathelijne/japan
 # renovate: image=ghcr.io/cathelijne/japan
-appVersion: "2024.07.29.1330"
+appVersion: "2024.08.05.1208"
