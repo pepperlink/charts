@@ -1,6 +1,6 @@
 # japan
 
-![Version: 0.0.15](https://img.shields.io/badge/Version-0.0.15-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2024.08.12.1112](https://img.shields.io/badge/AppVersion-2024.08.12.1112-informational?style=flat-square)
+![Version: 0.0.16](https://img.shields.io/badge/Version-0.0.16-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2024.08.19.1203](https://img.shields.io/badge/AppVersion-2024.08.19.1203-informational?style=flat-square)
 
 Website for Japan 2024
 
