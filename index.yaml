@@ -1026,6 +1026,20 @@ entries:
     version: 0.1.24
   sabnzbd:
   - apiVersion: v2
+    appVersion: 4.3.3
+    created: "2024-08-21T16:24:17.578787835Z"
+    description: sabnzbd is a usenet client.
+    digest: f2e90ebf9eba07d7a282229fc95190c72f1863de28edbc3d44efc1dfd277377a
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: sabnzbd
+    sources:
+    - https://github.com/linuxserver/docker-sabnzbd
+    - https://docs.linuxserver.io/images/docker-sabnzbd
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/sabnzbd-0.1.3/sabnzbd-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     appVersion: 4.3.2
     created: "2024-06-16T22:36:43.545396099Z"
     description: sabnzbd is a usenet client.
@@ -1137,4 +1151,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-08-21T13:27:03.622071768Z"
+generated: "2024-08-21T16:24:17.578932546Z"
