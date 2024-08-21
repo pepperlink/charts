@@ -1,6 +1,6 @@
 apiVersion: v2
 name: sabnzbd
-version: "0.1.2"
+version: "0.1.3"
 description: sabnzbd is a usenet client.
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
