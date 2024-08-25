@@ -456,6 +456,18 @@ entries:
     version: 0.0.1
   jellyfin:
   - apiVersion: v2
+    appVersion: 10.9.10
+    created: "2024-08-25T09:24:56.95608907Z"
+    description: Jellyfin Media Server
+    digest: 0cedb95eb17fb2408ffcb10206e58ad336c0df2375b6ec40e200b0d4d5d1d8a5
+    name: jellyfin
+    sources:
+    - https://hub.docker.com/r/jellyfin/jellyfin
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyfin-0.1.25/jellyfin-0.1.25.tgz
+    version: 0.1.25
+  - apiVersion: v2
     appVersion: 10.9.9
     created: "2024-08-05T03:39:03.230138181Z"
     description: Jellyfin Media Server
@@ -1164,4 +1176,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-08-23T03:57:17.686267842Z"
+generated: "2024-08-25T09:24:56.956287558Z"
