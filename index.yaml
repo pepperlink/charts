@@ -918,6 +918,21 @@ entries:
     version: 0.0.1
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.23.1
+    created: "2024-09-02T07:20:36.410115518Z"
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack.
+    digest: 1202d8a271149ebdfa7c161407ca53af33e4f8697058150e60441213a103db7f
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: prowlarr
+    sources:
+    - https://github.com/linuxserver/docker-prowlarr
+    - https://docs.linuxserver.io/images/docker-prowlarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/prowlarr-0.1.23/prowlarr-0.1.23.tgz
+    version: 0.1.23
+  - apiVersion: v2
     appVersion: 1.21.2
     created: "2024-07-27T17:30:07.060191708Z"
     description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
@@ -1245,4 +1260,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-08-30T20:00:31.030609209Z"
+generated: "2024-09-02T07:20:36.410262784Z"
