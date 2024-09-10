@@ -6,4 +6,4 @@ type: application
 sources:
   - https://github.com/sissbruecker/linkding
 # renovate: image=sissbruecker/linkding
-appVersion: "1.31.1"
+appVersion: "1.32.0"
