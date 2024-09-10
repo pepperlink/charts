@@ -182,6 +182,22 @@ entries:
     version: 0.1.30
   homepage:
   - apiVersion: v2
+    appVersion: v0.9.7
+    created: "2024-09-10T06:11:15.330158878Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Chart for gethomepage/homepage. Original chart by jameswyn/helm-charts.
+    digest: 6cf370aa50acde36d8dc5bd16857fe040656c78cc6d43043a3702241a86e3610
+    icon: https://github.com/gethomepage/homepage/blob/de584eae8f12a0d257e554e9511ef19bd2a1232c/public/mstile-150x150.png
+    name: homepage
+    sources:
+    - https://github.com/gethomepage/homepage/
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/homepage-0.0.6/homepage-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
     appVersion: v0.9.6
     created: "2024-08-11T17:38:18.976376947Z"
     dependencies:
@@ -1296,4 +1312,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-09-09T14:36:18.336904305Z"
+generated: "2024-09-10T06:11:15.330326611Z"
