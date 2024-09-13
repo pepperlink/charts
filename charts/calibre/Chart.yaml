@@ -2,7 +2,7 @@ apiVersion: v2
 name: calibre
 description: calibre is an organizer and contentserver for books.
 icon: https://docs.linuxserver.io/assets/icon.svg
-version: "0.1.31"
+version: "0.1.32"
 type: application
 sources:
   - https://docs.linuxserver.io/images/docker-calibre
