@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   bazarr:
   - apiVersion: v2
+    appVersion: 1.4.4
+    created: "2024-09-15T21:27:40.139053675Z"
+    description: bazarr is a for subtitles.
+    digest: ec657e5fed7bdcd9b8c348639dd135256009c2f1981fb62d8324bd70d1286b22
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: bazarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-bazarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/bazarr-0.1.20/bazarr-0.1.20.tgz
+    version: 0.1.20
+  - apiVersion: v2
     appVersion: 1.4.3
     created: "2024-06-16T22:36:41.223383798Z"
     description: bazarr is a for subtitles.
@@ -1381,4 +1394,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-09-14T11:18:26.029435218Z"
+generated: "2024-09-15T21:27:40.139238381Z"
