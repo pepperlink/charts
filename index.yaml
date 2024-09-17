@@ -1124,6 +1124,21 @@ entries:
     version: 0.1.20
   qbittorrent:
   - apiVersion: v2
+    appVersion: 4.6.7
+    created: "2024-09-17T18:52:18.393385002Z"
+    description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 6ade3264f473afa5edeb0106880473b21203d3c1fdd27c1919245db4939d7c92
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: qbittorrent
+    sources:
+    - https://github.com/linuxserver/docker-qbittorrent
+    - https://docs.linuxserver.io/images/docker-qbittorrent
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/qbittorrent-0.1.8/qbittorrent-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
     appVersion: 4.6.6
     created: "2024-08-20T17:29:47.449717239Z"
     description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent
@@ -1406,4 +1421,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-09-16T11:58:13.578654184Z"
+generated: "2024-09-17T18:52:18.393554829Z"
