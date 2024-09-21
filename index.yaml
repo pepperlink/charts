@@ -1169,6 +1169,21 @@ entries:
     version: 0.1.6
   radarr:
   - apiVersion: v2
+    appVersion: 5.10.4
+    created: "2024-09-21T02:08:24.93198522Z"
+    description: radarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 16c51bc136f137be628ad7f5cfd1160acdf4ec8a09b1c55ee317e49bd35daf4c
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: radarr
+    sources:
+    - https://github.com/linuxserver/docker-radarr
+    - https://docs.linuxserver.io/images/docker-radarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/radarr-0.1.25/radarr-0.1.25.tgz
+    version: 0.1.25
+  - apiVersion: v2
     appVersion: 5.9.1
     created: "2024-08-20T22:52:12.216522928Z"
     description: radarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -1421,4 +1436,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/storm-0.1.8/storm-0.1.8.tgz
     version: 0.1.8
-generated: "2024-09-17T18:52:18.393554829Z"
+generated: "2024-09-21T02:08:24.932188249Z"
