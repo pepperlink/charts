@@ -1,0 +1,92 @@
+{{- include "bjw-s.common.loader.init" . }}
+
+{{- define "vikunja.hardcodedValues" -}}
+# Set the nameOverride based on the release name if no override has been set
+{{ if not .Values.global.nameOverride }}
+global:
+  nameOverride: "{{ .Release.Name }}"
+{{ end }}
+controllers:
+  main:
+    enabled: true
+    type: deployment
+    containers:
+      main:
+        image:
+          repository: vikunja/vikunja
+          {{ if not .Values.controllers.main.containers.main.image.tag -}}
+          tag: "{{ .Chart.AppVersion }}"
+          {{- end }}
+{{- end -}}
+
+{{- $_ := mergeOverwrite .Values (include "vikunja.hardcodedValues" . | fromYaml) -}}
+
+{{- define "vikunja.values" -}}
+controllers:
+  main:
+    containers:
+      main:
+        env:
+          {{- with .Values.ingress.main }}{{- if and .enabled .hosts }}
+          VIKUNJA_SERVICE_PUBLICURL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
+          {{- end }}{{- end }}
+          {{- if .Values.controllers.main.containers.main.env }}
+          {{- toYaml .Values.controllers.main.containers.main.env | nindent 10 }}
+          {{- end }}
+          {{- if .Values.postgresql.enabled }}
+          {{- with .Values.postgresql }}
+          VIKUNJA_DATABASE_TYPE: postgresql
+          VIKUNJA_DATABASE_HOST: {{ $.Release.Name }}-postgresql
+          VIKUNJA_DATABASE_DATABASE: {{ .auth.database }}
+          VIKUNJA_DATABASE_USER: {{ default "postgres" .auth.username }}
+          VIKUNJA_DATABASE_PASSWORD:
+            secretKeyRef:
+              name: {{ $.Release.Name }}-postgresql
+              key: {{ if not .auth.password }}postgres-{{ end }}password
+          {{- end }}
+          {{- else if .Values.mariadb.enabled }}
+          {{- with .Values.mariadb}}
+          VIKUNJA_DATABASE_TYPE: mariadb
+          VIKUNJA_DATABASE_HOST: {{ $.Release.Name }}-mariadb
+          VIKUNJA_DATABASE_DATABASE: {{ .auth.database }}
+          VIKUNJA_DATABASE_USER: {{ .auth.username }}
+          VIKUNJA_DATABASE_PASSWORD:
+            secretKeyRef:
+              name: {{ $.Release.Name }}-mariadb
+              key: mariadb-password
+          {{- end }}
+          {{- end }}
+
+          {{- if .Values.redis.enabled }}
+          {{- with .Values.redis }}
+          A_REDIS_PASSWORD:
+            secretKeyRef:
+              name: {{ $.Release.Name }}-redis
+              key: redis-password
+          PAPERLESS_REDIS: redis://{{ .auth.username }}:$(A_REDIS_PASSWORD)@{{ $.Release.Name }}-redis-master
+          {{- end }}
+          {{- end }}
+
+{{- if .Values.vikunjaConfig }}
+configMaps:
+  config:
+    enabled: true
+    data: {{- .Values.vikunjaConfig | toYaml | trim | nindent 8 }}
+
+persistence:
+  config:
+    enabled: true
+    type: configMap
+    name: {{ $.Release.Name }}-config
+    advancedMounts:
+      main:
+        main:
+          - path: /config.yaml
+{{- end }}
+
+{{- end -}}
+
+{{- $_ := mergeOverwrite .Values (include "vikunja.values" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.generate" . }}
