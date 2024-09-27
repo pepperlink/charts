@@ -63,7 +63,8 @@ controllers:
             secretKeyRef:
               name: {{ $.Release.Name }}-redis
               key: redis-password
-          PAPERLESS_REDIS: redis://{{ .auth.username }}:$(A_REDIS_PASSWORD)@{{ $.Release.Name }}-redis-master
+          VIKUNJA_REDIS_ENABLED: "true"
+          VIKUNJA_REDIS_HOST: @{{ $.Release.Name }}-redis-master:6379
           {{- end }}
           {{- end }}
 
@@ -84,6 +85,7 @@ persistence:
       main:
         main:
           - path: /app/vikunja/config.yaml
+            subPath: config.yaml
 {{- end }}
 
 {{- end -}}
