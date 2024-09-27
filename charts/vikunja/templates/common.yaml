@@ -79,10 +79,11 @@ persistence:
     enabled: true
     type: configMap
     name: {{ $.Release.Name }}-config
+    path: /app/vikunja/config.yaml
     advancedMounts:
       main:
         main:
-          - path: /config.yaml
+          - path: /app/vikunja/config.yaml
 {{- end }}
 
 {{- end -}}
