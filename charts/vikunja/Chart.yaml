@@ -1,6 +1,6 @@
 apiVersion: v2
 name: vikunja
-version: 0.0.2
+version: 0.0.3
 description: "The Todo-app to organize your life."
 icon: https://kolaente.dev/vikunja/vikunja/raw/branch/main/frontend/public/images/icons/icon-maskable.png
 type: application

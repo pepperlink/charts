@@ -45,7 +45,7 @@ controllers:
               key: {{ if not .auth.password }}postgres-{{ end }}password
           {{- end }}
           {{- else if .Values.mariadb.enabled }}
-          {{- with .Values.mariadb}}
+          {{- with .Values.mariadb }}
           VIKUNJA_DATABASE_TYPE: mariadb
           VIKUNJA_DATABASE_HOST: {{ $.Release.Name }}-mariadb
           VIKUNJA_DATABASE_DATABASE: {{ .auth.database }}
@@ -71,7 +71,8 @@ controllers:
 configMaps:
   config:
     enabled: true
-    data: {{- .Values.vikunjaConfig | toYaml | trim | nindent 8 }}
+    data:
+      config.yaml: | {{- .Values.vikunjaConfig | toYaml | trim | nindent 8 }}
 
 persistence:
   config:
