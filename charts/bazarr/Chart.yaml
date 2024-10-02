@@ -3,7 +3,7 @@ name: bazarr
 description: bazarr is a for subtitles.
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
-version: "0.1.20"
+version: "0.1.21"
 sources:
   - https://docs.linuxserver.io/images/docker-bazarr
 # renovate: image=lscr.io/linuxserver/bazarr
