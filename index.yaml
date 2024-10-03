@@ -730,6 +730,18 @@ entries:
     version: 0.1.1
   linkding:
   - apiVersion: v2
+    appVersion: 1.36.0
+    created: "2024-10-03T02:48:05.515532201Z"
+    description: LinkDing
+    digest: f051f16996e9a9627479852e5af95db8d61eb266ca4a84b0af6609ea35536d91
+    name: linkding
+    sources:
+    - https://github.com/sissbruecker/linkding
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/linkding-0.1.18/linkding-0.1.18.tgz
+    version: 0.1.18
+  - apiVersion: v2
     appVersion: 1.35.0
     created: "2024-09-23T17:18:09.201543995Z"
     description: LinkDing
@@ -1674,4 +1686,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-10-02T08:11:33.561186151Z"
+generated: "2024-10-03T02:48:05.515767933Z"
