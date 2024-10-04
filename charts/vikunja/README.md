@@ -1,6 +1,6 @@
 # vikunja
 
-![Version: 0.0.6](https://img.shields.io/badge/Version-0.0.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.24.3](https://img.shields.io/badge/AppVersion-0.24.3-informational?style=flat-square)
+![Version: 0.0.7](https://img.shields.io/badge/Version-0.0.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.24.3](https://img.shields.io/badge/AppVersion-0.24.3-informational?style=flat-square)
 
 The Todo-app to organize your life.
 
@@ -12,7 +12,7 @@ The Todo-app to organize your life.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.4.0 |
+| https://bjw-s.github.io/helm-charts | common | 3.5.0 |
 | https://charts.bitnami.com/bitnami | mariadb | 16.5.0 |
 | https://charts.bitnami.com/bitnami | postgresql | 14.3.3 |
 | https://charts.bitnami.com/bitnami | redis | 18.19.4 |
