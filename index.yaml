@@ -926,6 +926,36 @@ entries:
   paperless-ngx:
   - apiVersion: v2
     appVersion: 2.8.6
+    created: "2024-10-08T15:46:54.415660585Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: 64e34c0d947b8975dd461e1b1a9c1710d263d3ccce446e421414f139f697be02
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/paperless-ngx-0.0.10/paperless-ngx-0.0.10.tgz
+    version: 0.0.10
+  - apiVersion: v2
+    appVersion: 2.8.6
     created: "2024-10-04T15:19:45.625839707Z"
     dependencies:
     - name: common
@@ -1614,6 +1644,35 @@ entries:
   vikunja:
   - apiVersion: v2
     appVersion: 0.24.3
+    created: "2024-10-08T15:46:54.626044462Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: The Todo-app to organize your life.
+    digest: fdd1a90a6c366a8bd76af2c61f6128a71ee5eecb243d3211b87f0219c4e32617
+    icon: https://kolaente.dev/vikunja/vikunja/raw/branch/main/frontend/public/images/icons/icon-maskable.png
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/vikunja
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.8/vikunja-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: 0.24.3
     created: "2024-10-04T15:19:45.852425336Z"
     dependencies:
     - name: common
@@ -1757,4 +1816,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-10-07T12:41:38.146352035Z"
+generated: "2024-10-08T15:46:54.626207054Z"
