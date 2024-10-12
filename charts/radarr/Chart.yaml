@@ -8,4 +8,4 @@ sources:
   - https://github.com/linuxserver/docker-radarr
   - https://docs.linuxserver.io/images/docker-radarr
 # renovate: image=lscr.io/linuxserver/radarr
-appVersion: "5.11.0"
+appVersion: "5.12.2"
