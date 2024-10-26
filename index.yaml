@@ -1698,6 +1698,21 @@ entries:
     version: 0.1.4
   sonarr:
   - apiVersion: v2
+    appVersion: 4.0.10
+    created: "2024-10-26T05:37:16.824807031Z"
+    description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: b34dda1d1b2d760aacd472abbc3081a8c8f8895924b25f9642e15f982aa91cd3
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: sonarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-sonarr
+    - https://github.com/linuxserver/docker-sonarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/sonarr-0.1.24/sonarr-0.1.24.tgz
+    version: 0.1.24
+  - apiVersion: v2
     appVersion: 4.0.9
     created: "2024-08-26T05:03:19.490130523Z"
     description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -2001,4 +2016,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-10-25T19:30:23.704700347Z"
+generated: "2024-10-26T05:37:16.825059124Z"
