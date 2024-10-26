@@ -8,4 +8,4 @@ sources:
   - https://docs.linuxserver.io/images/docker-sonarr
   - https://github.com/linuxserver/docker-sonarr
 # renovate: image=lscr.io/linuxserver/sonarr
-appVersion: "4.0.9"
+appVersion: "4.0.10"
