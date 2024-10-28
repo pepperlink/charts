@@ -408,6 +408,18 @@ entries:
     version: 0.0.1
   japan:
   - apiVersion: v2
+    appVersion: 2024.10.28.1205
+    created: "2024-10-28T12:30:30.382889107Z"
+    description: Website for Japan 2024
+    digest: 6d75c7438caed6c68597a1d796cd51d1d89f35e42fb0a42dd9d5dca3b2be11c1
+    name: japan
+    sources:
+    - https://github.com/cathelijne/japan
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/japan-0.0.25/japan-0.0.25.tgz
+    version: 0.0.25
+  - apiVersion: v2
     appVersion: 2024.10.21.1138
     created: "2024-10-21T14:49:58.057416374Z"
     description: Website for Japan 2024
@@ -2071,4 +2083,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-10-27T09:21:37.471031497Z"
+generated: "2024-10-28T12:30:30.383358574Z"
