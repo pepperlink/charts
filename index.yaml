@@ -1002,6 +1002,36 @@ entries:
     version: 0.1.3
   paperless-ngx:
   - apiVersion: v2
+    appVersion: 2.13.4
+    created: "2024-11-03T16:24:44.490041107Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: 3f9946c406450ca249488a070bdeda6badcae734167bedab9a8616098662d7a9
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/paperless-ngx-0.0.16/paperless-ngx-0.0.16.tgz
+    version: 0.0.16
+  - apiVersion: v2
     appVersion: 2.13.3
     created: "2024-11-03T06:17:49.587662584Z"
     dependencies:
@@ -2186,4 +2216,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-11-03T14:04:31.143509275Z"
+generated: "2024-11-03T16:24:44.490347889Z"
