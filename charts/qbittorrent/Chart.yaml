@@ -8,4 +8,4 @@ sources:
   - https://github.com/linuxserver/docker-qbittorrent
   - https://docs.linuxserver.io/images/docker-qbittorrent
 # renovate: image=ghcr.io/linuxserver/qbittorrent
-appVersion: "5.0.1"
+appVersion: "5.0.0"
