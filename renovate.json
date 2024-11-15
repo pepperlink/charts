@@ -45,6 +45,13 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "autoApprove": true,
       "automerge": true
+    },
+    {
+      "description": "Ignore old versions of qbittorrent",
+      "matchPackageNames": ["ghcr.io/linuxserver/qbittorrent"],
+      "allowedVersions": ">=5.0.0 || <10.0.0",
+      "automerge": true,
+      "autoApprove": true
     }
   ],
 
