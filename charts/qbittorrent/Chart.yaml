@@ -7,5 +7,5 @@ type: application
 sources:
   - https://github.com/linuxserver/docker-qbittorrent
   - https://docs.linuxserver.io/images/docker-qbittorrent
-# renovate: image=lscr.io/linuxserver/qbittorrent
+# renovate: image=ghcr.io/linuxserver/qbittorrent
 appVersion: "4.6.7"
