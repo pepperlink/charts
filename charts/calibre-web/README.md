@@ -1,6 +1,6 @@
 # calibre-web
 
-![Version: 0.1.17](https://img.shields.io/badge/Version-0.1.17-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.23](https://img.shields.io/badge/AppVersion-0.6.23-informational?style=flat-square)
+![Version: 0.1.18](https://img.shields.io/badge/Version-0.1.18-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.24](https://img.shields.io/badge/AppVersion-0.6.24-informational?style=flat-square)
 
 calibre-web is a web front end for books.
 
