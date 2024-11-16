@@ -171,6 +171,19 @@ entries:
     version: 0.1.26
   calibre-web:
   - apiVersion: v2
+    appVersion: 0.6.24
+    created: "2024-11-16T08:27:43.28545706Z"
+    description: calibre-web is a web front end for books.
+    digest: 03f8e26736dc338eab077a430f46e484eb5a3ae626d706b10b279b1958d999f2
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: calibre-web
+    sources:
+    - https://docs.linuxserver.io/images/docker-calibre-web
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/calibre-web-0.1.18/calibre-web-0.1.18.tgz
+    version: 0.1.18
+  - apiVersion: v2
     appVersion: 0.6.23
     created: "2024-08-08T02:54:00.287309238Z"
     description: calibre-web is a web front end for books.
@@ -2302,4 +2315,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-11-15T16:00:26.23930573Z"
+generated: "2024-11-16T08:27:43.285667952Z"
