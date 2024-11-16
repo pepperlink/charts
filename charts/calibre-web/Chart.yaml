@@ -1,6 +1,6 @@
 apiVersion: v2
 name: calibre-web
-version: "0.1.17"
+version: "0.1.18"
 description: calibre-web is a web front end for books.
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
