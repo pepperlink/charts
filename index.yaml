@@ -751,6 +751,18 @@ entries:
     version: 0.0.1
   jellyfin:
   - apiVersion: v2
+    appVersion: 10.10.2
+    created: "2024-11-17T02:46:46.338261261Z"
+    description: Jellyfin Media Server
+    digest: ee8ce81298775cafb02e3f8fbabfc2d03d2a90a13197f8720674a2307225af22
+    name: jellyfin
+    sources:
+    - https://hub.docker.com/r/jellyfin/jellyfin
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyfin-0.1.29/jellyfin-0.1.29.tgz
+    version: 0.1.29
+  - apiVersion: v2
     appVersion: 10.10.1
     created: "2024-11-03T19:35:05.588688287Z"
     description: Jellyfin Media Server
@@ -2315,4 +2327,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-11-16T08:27:43.285667952Z"
+generated: "2024-11-17T02:46:46.338570498Z"
