@@ -1921,6 +1921,19 @@ entries:
     version: 0.1.20
   readarr:
   - apiVersion: v2
+    appVersion: 0.4.4-develop
+    created: "2024-11-23T23:08:44.364297948Z"
+    description: readarr is for books.
+    digest: 84472383a6f06a17fbb4e3a70fc0c396654fb3a0d4f3156d188dbb5c7e1ac8e3
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: readarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-readarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/readarr-0.1.32/readarr-0.1.32.tgz
+    version: 0.1.32
+  - apiVersion: v2
     appVersion: 0.4.3-develop
     created: "2024-11-03T14:04:31.143251885Z"
     description: readarr is for books.
@@ -2413,4 +2426,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-11-23T08:39:01.303676256Z"
+generated: "2024-11-23T23:08:44.364609921Z"
