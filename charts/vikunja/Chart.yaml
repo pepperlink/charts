@@ -1,13 +1,13 @@
 apiVersion: v2
 name: vikunja
-version: 0.0.9
+version: 0.0.10
 description: "The Todo-app to organize your life."
 icon: https://kolaente.dev/vikunja/vikunja/raw/branch/main/frontend/public/images/icons/icon-maskable.png
 type: application
 sources:
   - https://kolaente.dev/vikunja/vikunja
 # renovate: image=docker.io/vikunja/vikunja
-appVersion: "0.24.4"
+appVersion: "0.24.5"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
