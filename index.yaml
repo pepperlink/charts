@@ -1607,6 +1607,21 @@ entries:
     version: 0.0.1
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.27.0
+    created: "2024-11-26T19:46:10.816608347Z"
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack.
+    digest: d4584eb2861c9283aa71e7b068bd615d71d4cc4dfc54d0262c11f45618472e25
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: prowlarr
+    sources:
+    - https://github.com/linuxserver/docker-prowlarr
+    - https://docs.linuxserver.io/images/docker-prowlarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/prowlarr-0.1.27/prowlarr-0.1.27.tgz
+    version: 0.1.27
+  - apiVersion: v2
     appVersion: 1.26.1
     created: "2024-11-21T05:41:28.280002294Z"
     description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
@@ -2442,4 +2457,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-11-24T22:45:13.287929455Z"
+generated: "2024-11-26T19:46:10.816916804Z"
