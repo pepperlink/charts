@@ -1,6 +1,6 @@
 # sonarr
 
-![Version: 0.1.24](https://img.shields.io/badge/Version-0.1.24-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.10](https://img.shields.io/badge/AppVersion-4.0.10-informational?style=flat-square)
+![Version: 0.1.25](https://img.shields.io/badge/Version-0.1.25-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.11](https://img.shields.io/badge/AppVersion-4.0.11-informational?style=flat-square)
 
 sonarr is a lightweight, Free Software, cross-platform BitTorrent client.
 
