@@ -41,6 +41,19 @@ entries:
     version: 0.1.19
   calibre:
   - apiVersion: v2
+    appVersion: 7.22.0
+    created: "2024-11-29T06:53:57.314898125Z"
+    description: calibre is an organizer and contentserver for books.
+    digest: aff615c8bb07c17ba9dec5a5c0ff1441891649cb2624bb7c24ba0af7d2fcf62f
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: calibre
+    sources:
+    - https://docs.linuxserver.io/images/docker-calibre
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/calibre-0.1.36/calibre-0.1.36.tgz
+    version: 0.1.36
+  - apiVersion: v2
     appVersion: 7.21.0
     created: "2024-11-08T04:46:54.607467134Z"
     description: calibre is an organizer and contentserver for books.
@@ -2472,4 +2485,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-11-27T03:05:56.285918456Z"
+generated: "2024-11-29T06:53:57.315215727Z"
