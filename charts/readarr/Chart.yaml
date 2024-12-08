@@ -1,7 +1,7 @@
 apiVersion: v2
 name: readarr
 description: readarr is for books.
-version: "0.1.32"
+version: "0.1.33"
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
 sources:
