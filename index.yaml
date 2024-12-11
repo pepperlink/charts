@@ -223,6 +223,18 @@ entries:
     version: 0.1.16
   default-backend:
   - apiVersion: v2
+    appVersion: 3.3.1
+    created: "2024-12-11T16:52:20.213962089Z"
+    description: Default Backend for Ingress Controller
+    digest: da361923014b70cd793aaaa3dce831d335b0c873a86142830363f41ddc60d0a5
+    name: default-backend
+    sources:
+    - https://github.com/tarampampam/error-pages
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/default-backend-0.1.5/default-backend-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
     appVersion: 3.3.0
     created: "2024-08-11T10:18:35.010510721Z"
     description: Default Backend for Ingress Controller
@@ -2498,4 +2510,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-12-08T12:56:46.590838945Z"
+generated: "2024-12-11T16:52:20.214578807Z"
