@@ -1,6 +1,6 @@
 apiVersion: v2
 name: sabnzbd
-version: "0.1.3"
+version: "0.1.4"
 description: sabnzbd is a usenet client.
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
@@ -8,4 +8,4 @@ sources:
   - https://github.com/linuxserver/docker-sabnzbd
   - https://docs.linuxserver.io/images/docker-sabnzbd
 # renovate: image=lscr.io/linuxserver/sabnzbd
-appVersion: "4.3.3"
+appVersion: "4.4.0"
