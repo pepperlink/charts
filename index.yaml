@@ -2107,6 +2107,20 @@ entries:
     version: 0.1.24
   sabnzbd:
   - apiVersion: v2
+    appVersion: 4.4.0
+    created: "2024-12-11T16:53:40.172627607Z"
+    description: sabnzbd is a usenet client.
+    digest: 276d2cc479cb9729e19ef751baabad484684ebfaf62b3543d2a31a75498cbf88
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: sabnzbd
+    sources:
+    - https://github.com/linuxserver/docker-sabnzbd
+    - https://docs.linuxserver.io/images/docker-sabnzbd
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/sabnzbd-0.1.4/sabnzbd-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
     appVersion: 4.3.3
     created: "2024-08-21T16:24:17.578787835Z"
     description: sabnzbd is a usenet client.
@@ -2510,4 +2524,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-12-11T16:52:20.214578807Z"
+generated: "2024-12-11T16:53:40.172938519Z"
