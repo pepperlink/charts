@@ -8,4 +8,4 @@ sources:
   - https://github.com/linuxserver/docker-sabnzbd
   - https://docs.linuxserver.io/images/docker-sabnzbd
 # renovate: image=lscr.io/linuxserver/sabnzbd
-appVersion: "4.3.3"
+appVersion: "4.4.0"
