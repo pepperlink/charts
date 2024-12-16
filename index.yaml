@@ -1827,6 +1827,21 @@ entries:
     version: 0.1.6
   radarr:
   - apiVersion: v2
+    appVersion: 5.16.3
+    created: "2024-12-16T19:38:45.760825759Z"
+    description: radarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: ca6de47e3854b61b2cde0afed9cf988244a74ea4ffd6349f3337d2bbebdd2497
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: radarr
+    sources:
+    - https://github.com/linuxserver/docker-radarr
+    - https://docs.linuxserver.io/images/docker-radarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/radarr-0.1.31/radarr-0.1.31.tgz
+    version: 0.1.31
+  - apiVersion: v2
     appVersion: 5.15.1
     created: "2024-11-23T08:34:35.851724131Z"
     description: radarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -2524,4 +2539,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-12-11T16:53:40.172938519Z"
+generated: "2024-12-16T19:38:45.76111791Z"
