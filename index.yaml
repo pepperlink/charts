@@ -1768,6 +1768,21 @@ entries:
     version: 0.1.20
   qbittorrent:
   - apiVersion: v2
+    appVersion: 5.0.3
+    created: "2024-12-21T15:23:27.523059035Z"
+    description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: cdccdb6e1c3cc0d1d3abba1abe491c902d6ce21685e25cd019f62978d2d939ce
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: qbittorrent
+    sources:
+    - https://github.com/linuxserver/docker-qbittorrent
+    - https://docs.linuxserver.io/images/docker-qbittorrent
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/qbittorrent-0.1.11/qbittorrent-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v2
     appVersion: 5.0.2
     created: "2024-11-21T05:40:02.635756445Z"
     description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent
@@ -2569,4 +2584,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-12-21T14:46:55.260353601Z"
+generated: "2024-12-21T15:23:27.523387849Z"
