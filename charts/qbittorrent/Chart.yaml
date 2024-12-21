@@ -1,6 +1,6 @@
 apiVersion: v2
 name: qbittorrent
-version: "0.1.10"
+version: "0.1.11"
 description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent client.
 icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
