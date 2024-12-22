@@ -3,9 +3,9 @@ apiVersion: v2
 description: Chart for gethomepage/homepage. Original chart by jameswyn/helm-charts.
 icon: https://github.com/gethomepage/homepage/blob/de584eae8f12a0d257e554e9511ef19bd2a1232c/public/mstile-150x150.png
 name: homepage
-version: "0.0.13"
+version: "0.0.14"
 # renovate: image=ghcr.io/gethomepage/homepage
-appVersion: "v0.10.1"
+appVersion: "v0.10.2"
 sources:
   - https://github.com/gethomepage/homepage/
 dependencies:
