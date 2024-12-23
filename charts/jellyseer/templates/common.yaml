@@ -1,0 +1,39 @@
+{{- include "bjw-s.common.loader.init" . }}
+
+{{- define "jellyseerr.hardcodedValues" -}}
+# Set the nameOverride based on the release name if no override has been set
+{{ if not .Values.global.nameOverride }}
+global:
+  nameOverride: "{{ .Release.Name }}"
+{{ end }}
+controllers:
+  main:
+    enabled: true
+    type: deployment
+    containers:
+      main:
+        image:
+          repository: fallenbagel/jellyseerr
+          {{ if not .Values.controllers.main.containers.main.image.tag -}}
+          tag: "{{ .Chart.AppVersion }}"
+          {{- end }}
+{{- end -}}
+
+{{- $_ := mergeOverwrite .Values (include "jellyseerr.hardcodedValues" . | fromYaml) -}}
+
+{{- define "jellyseerr.values" -}}
+controllers:
+  main:
+    containers:
+      main:
+        env:
+          {{- if .Values.controllers.main.containers.main.env }}
+          {{- toYaml .Values.controllers.main.containers.main.env | nindent 10 }}
+          {{- end }}
+
+{{- end -}}
+
+{{- $_ := mergeOverwrite .Values (include "jellyseerr.values" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.generate" . }}
