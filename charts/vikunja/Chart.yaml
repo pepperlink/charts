@@ -7,7 +7,7 @@ type: application
 sources:
   - https://kolaente.dev/vikunja/vikunja
 # renovate: image=docker.io/vikunja/vikunja
-appVersion: "0.24.5"
+appVersion: "0.24.6"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
