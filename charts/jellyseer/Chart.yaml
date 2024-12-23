@@ -5,7 +5,7 @@ description: "Request movies and series"
 icon: https://github.com/Fallenbagel/jellyseerr/raw/develop/public/logo_full.svg
 type: application
 sources:
-  - https://kolaente.dev/fallenbagel/jellyseerr
+  - https://github.com/fallenbagel/jellyseerr
 # renovate: image=docker.io/fallenbagel/jellyseerr
 appVersion: "2.1.0"
 dependencies:
