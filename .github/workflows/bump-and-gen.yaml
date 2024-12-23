@@ -102,7 +102,7 @@ jobs:
           ./scripts/bumpversion-helmchart.sh
 
       - name: Run helm-docs
-        uses: losisin/helm-docs-github-action@v1.3.4
+        uses: losisin/helm-docs-github-action@v1.3.5
         with:
           chart-search-root: "./charts/${{ matrix.charts }}"
 
