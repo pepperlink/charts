@@ -4,7 +4,7 @@ controllers:
       main:
         image:
           repository: riffsphereha/newznabarr
-          tag: ""
+          tag: latest
         env:
           TZ: "UTC"
 
@@ -19,26 +19,6 @@ service:
     ports:
       http:
         port: 10000
-
-ingress:
-  # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See [values.yaml](./values.yaml)
-  main:
-    enabled: false
-    annotations:
-      # nginx.ingress.kubernetes.io/proxy-body-size: 64m
-      # cert-manager.io/cluster-issuer: letsencrypt-prod
-    hosts:
-      - host: chart-example.local
-        paths:
-          - path: /
-            service:
-              identifier: main
-              port: http
-    tls:
-      - secretName: chart-example.local
-        hosts:
-          - chart-example.local
 
 persistence:
   newznabarr-config:
