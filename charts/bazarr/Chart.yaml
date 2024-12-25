@@ -7,4 +7,4 @@ version: "0.1.21"
 sources:
   - https://docs.linuxserver.io/images/docker-bazarr
 # renovate: image=lscr.io/linuxserver/bazarr
-appVersion: "1.4.5"
+appVersion: "1.5.0"
