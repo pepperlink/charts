@@ -1,6 +1,6 @@
 apiVersion: v2
 name: jellyseerr
-version: 0.0.2
+version: 0.0.3
 description: "Request movies and series"
 icon: https://github.com/Fallenbagel/jellyseerr/raw/develop/public/logo_full.svg
 type: application
