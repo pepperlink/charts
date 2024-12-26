@@ -1016,6 +1016,23 @@ entries:
   jellyseerr:
   - apiVersion: v2
     appVersion: 2.1.0
+    created: "2024-12-26T10:53:55.183720136Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.0
+    description: Request movies and series
+    digest: 13125bb9a0142c584792c02945866dd2c83b3d0a78b151204e088ef1d3c48e59
+    icon: https://github.com/Fallenbagel/jellyseerr/raw/develop/public/logo_full.svg
+    name: jellyseerr
+    sources:
+    - https://github.com/fallenbagel/jellyseerr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyseerr-0.0.3/jellyseerr-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 2.1.0
     created: "2024-12-23T13:32:24.214339831Z"
     dependencies:
     - name: common
@@ -1247,6 +1264,22 @@ entries:
   newznabarr:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2024-12-26T10:53:55.382848325Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.0
+    description: A sabnzb-like interface that fully supports plugins
+    digest: 78e271b97018fbfc6dbed132c97e6a6415d9eb4daddccf3c0a5f2ba794747472
+    name: newznabarr
+    sources:
+    - https://github.com/riffsphereha/newznabarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/newznabarr-0.0.2/newznabarr-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2024-12-23T20:02:38.449328557Z"
     dependencies:
     - name: common
@@ -1262,6 +1295,36 @@ entries:
     - https://github.com/pepperlink/charts/releases/download/newznabarr-0.0.1/newznabarr-0.0.1.tgz
     version: 0.0.1
   paperless-ngx:
+  - apiVersion: v2
+    appVersion: 2.13.5
+    created: "2024-12-26T10:53:55.581725544Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: dacb1ce53280f712a6af498c78e44fee9cf710c114f84e37cbe2eefcc87f174b
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/paperless-ngx-0.0.18/paperless-ngx-0.0.18.tgz
+    version: 0.0.18
   - apiVersion: v2
     appVersion: 2.13.5
     created: "2024-11-10T19:41:42.795548335Z"
@@ -2534,6 +2597,35 @@ entries:
   vikunja:
   - apiVersion: v2
     appVersion: 0.24.6
+    created: "2024-12-26T10:53:55.783958886Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: The Todo-app to organize your life.
+    digest: d1c6fc6e06b3436212a84dde18fd995b6bf207d70ce2770e6b6956bb70361ba9
+    icon: https://kolaente.dev/vikunja/vikunja/raw/branch/main/frontend/public/images/icons/icon-maskable.png
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/vikunja
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.12/vikunja-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v2
+    appVersion: 0.24.6
     created: "2024-12-23T12:46:06.197519057Z"
     dependencies:
     - name: common
@@ -2793,4 +2885,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-12-25T14:49:01.474233842Z"
+generated: "2024-12-26T10:53:55.784297109Z"
