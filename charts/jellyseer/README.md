@@ -1,18 +1,18 @@
 # jellyseerr
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.1.0](https://img.shields.io/badge/AppVersion-2.1.0-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.1.0](https://img.shields.io/badge/AppVersion-2.1.0-informational?style=flat-square)
 
 Request movies and series
 
 ## Source Code
 
-* <https://kolaente.dev/fallenbagel/jellyseerr>
+* <https://github.com/fallenbagel/jellyseerr>
 
 ## Requirements
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.5.1 |
+| https://bjw-s.github.io/helm-charts | common | 3.6.0 |
 
 ## Values
 
