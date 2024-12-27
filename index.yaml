@@ -324,6 +324,22 @@ entries:
     version: 0.1.30
   homepage:
   - apiVersion: v2
+    appVersion: v0.10.5
+    created: "2024-12-27T03:54:12.001786039Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Chart for gethomepage/homepage. Original chart by jameswyn/helm-charts.
+    digest: d5f6bdb52a06f0b6fdc12e5963cf71f772ff4257d922f17e92540a3f6d0ced50
+    icon: https://github.com/gethomepage/homepage/blob/de584eae8f12a0d257e554e9511ef19bd2a1232c/public/mstile-150x150.png
+    name: homepage
+    sources:
+    - https://github.com/gethomepage/homepage/
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/homepage-0.0.17/homepage-0.0.17.tgz
+    version: 0.0.17
+  - apiVersion: v2
     appVersion: v0.10.4
     created: "2024-12-25T14:48:07.506825921Z"
     dependencies:
@@ -2885,4 +2901,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-12-26T10:53:55.784297109Z"
+generated: "2024-12-27T03:54:12.002157925Z"
