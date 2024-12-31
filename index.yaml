@@ -1047,6 +1047,23 @@ entries:
     version: 0.1.20
   jellyseerr:
   - apiVersion: v2
+    appVersion: 2.2.3
+    created: "2024-12-31T11:31:47.080157963Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.0
+    description: Request movies and series
+    digest: f208653fc308989723028778516b07031409735de56431ab1fd43137c9e6e950
+    icon: https://github.com/Fallenbagel/jellyseerr/raw/develop/public/logo_full.svg
+    name: jellyseerr
+    sources:
+    - https://github.com/fallenbagel/jellyseerr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyseerr-0.0.5/jellyseerr-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
     appVersion: 2.2.0
     created: "2024-12-30T02:33:11.089345629Z"
     dependencies:
@@ -2934,4 +2951,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2024-12-30T02:33:11.089743761Z"
+generated: "2024-12-31T11:31:47.080447322Z"
