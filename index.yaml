@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   bazarr:
   - apiVersion: v2
+    appVersion: 1.5.1
+    created: "2025-01-01T18:32:18.113571201Z"
+    description: bazarr is a for subtitles.
+    digest: 8982e18095a53f971377144f08d5dd15f0a93c9fa10e5495c85206544da2b035
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: bazarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-bazarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/bazarr-0.1.23/bazarr-0.1.23.tgz
+    version: 0.1.23
+  - apiVersion: v2
     appVersion: 1.5.0
     created: "2024-12-25T14:49:01.474043276Z"
     description: bazarr is a for subtitles.
@@ -2967,4 +2980,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2025-01-01T10:24:22.15138023Z"
+generated: "2025-01-01T18:32:18.114111782Z"
