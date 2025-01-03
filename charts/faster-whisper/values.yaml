@@ -1,0 +1,55 @@
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: lscr.io/linuxserver/faster-whisper
+          tag: latest
+        env:
+          TZ: "Etc/UTC"
+          PUID: 1000
+          PGID: 1000
+          WHISPER_MODEL: tiny-int8
+
+
+serviceAccount:
+  create: false
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    controller: main
+    ports:
+      http:
+        port: 10300
+
+persistence:
+  faster-whisper-config:
+    enabled: true
+    type: hostPath
+    hostPathType: DirectoryOrCreate
+    advancedMounts:
+      main:
+        main:
+          - path: /config
+    hostPath: /path/to/your/config/faster-whisper
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    enabled: false
+    # annotations:
+    #   cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - host: faster-whisper.local
+        paths:
+          - path: /
+            service:
+              identifier: main
+              port: http
+    tls:
+      - secretName: faster-whisper-tls
+        hosts:
+          - faster-whisper.local
