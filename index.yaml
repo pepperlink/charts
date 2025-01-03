@@ -2998,4 +2998,21 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/vikunja-0.0.2/vikunja-0.0.2.tgz
     version: 0.0.2
-generated: "2025-01-03T10:56:23.61085936Z"
+  whisper-asr:
+  - apiVersion: v2
+    appVersion: v1.7.1
+    created: "2025-01-03T12:25:35.402996633Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.0
+    description: Whisper implementation that supports OpenAI Whisper and Faster Whisper
+    digest: 0e881748ccf7ea7954df48d81af5c9ef3d65829376bc961aede36ae2da1e22a2
+    name: whisper-asr
+    sources:
+    - https://github.com/ahmetoner/whisper-asr-webservice
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-01-03T12:25:35.403310798Z"
