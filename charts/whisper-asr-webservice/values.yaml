@@ -1,0 +1,57 @@
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: onerahmet/openai-whisper-asr-webservice
+          tag: latest
+        env:
+          TZ: "Etc/UTC"
+          PUID: 1000
+          PGID: 1000
+          ASR_MODEL: tiny # Available ASR_MODELs are tiny, base, small, medium, large, large-v1, large-v2, large-v3, turbo and large-v3-turbo
+          ASR_ENGINE: faster_whisper # Available ASR_ENGINEs are faster_whisper and openai_whisper
+          SAMPLE_RATE: 16000
+
+
+serviceAccount:
+  create: false
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    controller: main
+    ports:
+      http:
+        port: 9000
+
+persistence:
+  whisper-asr-config:
+    enabled: true
+    type: hostPath
+    hostPathType: DirectoryOrCreate
+    advancedMounts:
+      main:
+        main:
+          - path: /config
+    hostPath: /path/to/your/config/whisper-asr
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    enabled: false
+    # annotations:
+    #   cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - host: whisper-asr.local
+        paths:
+          - path: /
+            service:
+              identifier: main
+              port: http
+    tls:
+      - secretName: whisper-asr-tls
+        hosts:
+          - whisper-asr.local
