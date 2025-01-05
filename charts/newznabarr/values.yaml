@@ -22,7 +22,7 @@ service:
 
 persistence:
   newznabarr-config:
-    enabled: true
+    enabled: false
     type: hostPath
     hostPathType: DirectoryOrCreate
     advancedMounts:
@@ -31,7 +31,7 @@ persistence:
           - path: /app/config
     hostPath: /path/to/your/config/newznabarr
   newznabarr-data:
-    enabled: true
+    enabled: false
     retain: true
     accessMode: ReadWriteOnce
     size: 500Gi

@@ -28,7 +28,7 @@ service:
 
 persistence:
   whisper-asr-config:
-    enabled: true
+    enabled: false
     type: hostPath
     hostPathType: DirectoryOrCreate
     advancedMounts:
