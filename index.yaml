@@ -355,6 +355,22 @@ entries:
     version: 0.0.2
   homepage:
   - apiVersion: v2
+    appVersion: v0.10.8
+    created: "2025-01-05T19:34:10.367951577Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Chart for gethomepage/homepage. Original chart by jameswyn/helm-charts.
+    digest: 48dbb3046b4e3c377f3c18e439c0c41d4146bb9ce28e821a7adf57ec82e4676b
+    icon: https://github.com/gethomepage/homepage/blob/de584eae8f12a0d257e554e9511ef19bd2a1232c/public/mstile-150x150.png
+    name: homepage
+    sources:
+    - https://github.com/gethomepage/homepage/
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/homepage-0.0.20/homepage-0.0.20.tgz
+    version: 0.0.20
+  - apiVersion: v2
     appVersion: v0.10.7
     created: "2025-01-01T10:24:22.151079379Z"
     dependencies:
@@ -3045,4 +3061,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-05T15:38:22.76048529Z"
+generated: "2025-01-05T19:34:10.692797247Z"
