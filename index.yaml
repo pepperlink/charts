@@ -2642,6 +2642,21 @@ entries:
     version: 0.1.4
   sonarr:
   - apiVersion: v2
+    appVersion: 4.0.12
+    created: "2025-01-06T05:03:15.563788664Z"
+    description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: a8a47287546e9aabdd6f4e8ec3fbb1e328e835e3500ee713debb753ca12d1774
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: sonarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-sonarr
+    - https://github.com/linuxserver/docker-sonarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/sonarr-0.1.26/sonarr-0.1.26.tgz
+    version: 0.1.26
+  - apiVersion: v2
     appVersion: 4.0.11
     created: "2024-11-27T03:05:56.28563119Z"
     description: sonarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -3079,4 +3094,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-05T20:16:57.025328128Z"
+generated: "2025-01-06T05:03:15.5641551Z"
