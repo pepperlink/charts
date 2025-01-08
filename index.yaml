@@ -355,6 +355,22 @@ entries:
     version: 0.0.2
   homepage:
   - apiVersion: v2
+    appVersion: v0.10.9
+    created: "2025-01-08T15:18:32.472633277Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Chart for gethomepage/homepage. Original chart by jameswyn/helm-charts.
+    digest: a2d376070d033c2344b7a90885bf7ba4a1e80c2adfba3039d17a473fff34c29d
+    icon: https://github.com/gethomepage/homepage/blob/de584eae8f12a0d257e554e9511ef19bd2a1232c/public/mstile-150x150.png
+    name: homepage
+    sources:
+    - https://github.com/gethomepage/homepage/
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/homepage-0.0.21/homepage-0.0.21.tgz
+    version: 0.0.21
+  - apiVersion: v2
     appVersion: v0.10.8
     created: "2025-01-05T19:34:10.367951577Z"
     dependencies:
@@ -2404,6 +2420,19 @@ entries:
     version: 0.1.20
   readarr:
   - apiVersion: v2
+    appVersion: 0.4.6.2711-ls135
+    created: "2025-01-08T15:18:32.592039877Z"
+    description: readarr is for books.
+    digest: 98882922aa1622df3954b257eda904270239bb35a21dbf26665553fd057ecf8f
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: readarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-readarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/readarr-0.1.37/readarr-0.1.37.tgz
+    version: 0.1.37
+  - apiVersion: v2
     appVersion: 0.4.6-develop
     created: "2024-12-23T21:41:43.697072727Z"
     description: readarr is for books.
@@ -3094,4 +3123,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-06T05:03:15.5641551Z"
+generated: "2025-01-08T15:18:32.592510475Z"
