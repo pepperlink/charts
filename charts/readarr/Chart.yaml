@@ -6,5 +6,5 @@ icon: https://docs.linuxserver.io/assets/icon.svg
 type: application
 sources:
   - https://docs.linuxserver.io/images/docker-readarr
-# renovate: image=lscr.io/linuxserver/readarr
-appVersion: "develop-version-0.4.6.2711"
+# renovate: image=linuxserver/readarr
+appVersion: "0.4.6-develop"
