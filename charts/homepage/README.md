@@ -1,6 +1,6 @@
 # homepage
 
-![Version: 0.0.20](https://img.shields.io/badge/Version-0.0.20-informational?style=flat-square) ![AppVersion: v0.10.8](https://img.shields.io/badge/AppVersion-v0.10.8-informational?style=flat-square)
+![Version: 0.0.21](https://img.shields.io/badge/Version-0.0.21-informational?style=flat-square) ![AppVersion: v0.10.9](https://img.shields.io/badge/AppVersion-v0.10.9-informational?style=flat-square)
 
 Chart for gethomepage/homepage. Original chart by jameswyn/helm-charts.
 
