@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 0.1.34](https://img.shields.io/badge/Version-0.1.34-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.6-develop](https://img.shields.io/badge/AppVersion-0.4.6--develop-informational?style=flat-square)
+![Version: 0.1.38](https://img.shields.io/badge/Version-0.1.38-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.7-develop](https://img.shields.io/badge/AppVersion-0.4.7--develop-informational?style=flat-square)
 
 readarr is for books.
 
@@ -21,7 +21,7 @@ readarr is for books.
 | environment.timezone | string | `"UTC"` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"Always"` |  |
-| image.repository | string | `"lscr.io/linuxserver/readarr"` |  |
+| image.repository | string | `"linuxserver/readarr"` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
