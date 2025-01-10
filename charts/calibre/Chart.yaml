@@ -7,4 +7,4 @@ type: application
 sources:
   - https://docs.linuxserver.io/images/docker-calibre
 # renovate: image=lscr.io/linuxserver/calibre
-appVersion: "7.23.0"
+appVersion: "7.24.0"
