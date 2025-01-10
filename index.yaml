@@ -67,6 +67,19 @@ entries:
     version: 0.1.19
   calibre:
   - apiVersion: v2
+    appVersion: 7.24.0
+    created: "2025-01-10T05:42:25.68338037Z"
+    description: calibre is an organizer and contentserver for books.
+    digest: a94950031abfbd0509b3b5d6ebe1c6f5074beee62c06c410f31a7d5e2a2fce13
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: calibre
+    sources:
+    - https://docs.linuxserver.io/images/docker-calibre
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/calibre-0.1.38/calibre-0.1.38.tgz
+    version: 0.1.38
+  - apiVersion: v2
     appVersion: 7.23.0
     created: "2024-12-21T15:24:45.268696607Z"
     description: calibre is an organizer and contentserver for books.
@@ -3148,4 +3161,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-08T20:48:10.009729036Z"
+generated: "2025-01-10T05:42:25.683740683Z"
