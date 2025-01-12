@@ -1,6 +1,6 @@
 # faster-whisper
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.4.0](https://img.shields.io/badge/AppVersion-2.4.0-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.4.0](https://img.shields.io/badge/AppVersion-2.4.0-informational?style=flat-square)
 
 A reimplementation of OpenAI's Whisper model using CTranslate2. Includes Wyoming protocol server.
 
@@ -12,7 +12,7 @@ A reimplementation of OpenAI's Whisper model using CTranslate2. Includes Wyoming
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.6.0 |
+| https://bjw-s.github.io/helm-charts | common | 3.6.1 |
 
 ## Values
 
@@ -26,7 +26,7 @@ A reimplementation of OpenAI's Whisper model using CTranslate2. Includes Wyoming
 | controllers.main.containers.main.image.tag | string | `"latest"` |  |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.faster-whisper-config.advancedMounts.main.main[0].path | string | `"/config"` |  |
-| persistence.faster-whisper-config.enabled | bool | `true` |  |
+| persistence.faster-whisper-config.enabled | bool | `false` |  |
 | persistence.faster-whisper-config.hostPath | string | `"/path/to/your/config/faster-whisper"` |  |
 | persistence.faster-whisper-config.hostPathType | string | `"DirectoryOrCreate"` |  |
 | persistence.faster-whisper-config.type | string | `"hostPath"` |  |
