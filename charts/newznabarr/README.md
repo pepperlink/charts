@@ -1,6 +1,6 @@
 # newznabarr
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
 
 A sabnzb-like interface that fully supports plugins
 
@@ -12,7 +12,7 @@ A sabnzb-like interface that fully supports plugins
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.6.0 |
+| https://bjw-s.github.io/helm-charts | common | 3.6.1 |
 
 ## Values
 
@@ -22,13 +22,13 @@ A sabnzb-like interface that fully supports plugins
 | controllers.main.containers.main.image.repository | string | `"riffsphereha/newznabarr"` |  |
 | controllers.main.containers.main.image.tag | string | `"latest"` |  |
 | persistence.newznabarr-config.advancedMounts.main.main[0].path | string | `"/app/config"` |  |
-| persistence.newznabarr-config.enabled | bool | `true` |  |
+| persistence.newznabarr-config.enabled | bool | `false` |  |
 | persistence.newznabarr-config.hostPath | string | `"/path/to/your/config/newznabarr"` |  |
 | persistence.newznabarr-config.hostPathType | string | `"DirectoryOrCreate"` |  |
 | persistence.newznabarr-config.type | string | `"hostPath"` |  |
 | persistence.newznabarr-data.accessMode | string | `"ReadWriteOnce"` |  |
 | persistence.newznabarr-data.advancedMounts.main.main[0].path | string | `"/data/downloads/downloadarr"` |  |
-| persistence.newznabarr-data.enabled | bool | `true` |  |
+| persistence.newznabarr-data.enabled | bool | `false` |  |
 | persistence.newznabarr-data.retain | bool | `true` |  |
 | persistence.newznabarr-data.size | string | `"500Gi"` |  |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |

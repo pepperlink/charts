@@ -1,6 +1,6 @@
 apiVersion: v2
 name: newznabarr
-version: 0.0.2
+version: 0.0.3
 description: "A sabnzb-like interface that fully supports plugins"
 # icon: https://github.com/riffsphereha/newznabarr/raw/develop/public/logo_full.svg
 type: application
