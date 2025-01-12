@@ -1,32 +1,34 @@
 # whisper-asr
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.4.0](https://img.shields.io/badge/AppVersion-2.4.0-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.7.1](https://img.shields.io/badge/AppVersion-v1.7.1-informational?style=flat-square)
 
-A reimplementation of OpenAI's Whisper model using CTranslate2. Includes Wyoming protocol server.
+Whisper implementation that supports OpenAI Whisper and Faster Whisper
 
 ## Source Code
 
-* <https://github.com/linuxserver/docker-whisper-asr>
+* <https://github.com/ahmetoner/whisper-asr-webservice>
 
 ## Requirements
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.6.0 |
+| https://bjw-s.github.io/helm-charts | common | 3.6.1 |
 
 ## Values
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| controllers.main.containers.main.env.ASR_ENGINE | string | `"faster_whisper"` |  |
+| controllers.main.containers.main.env.ASR_MODEL | string | `"tiny"` |  |
 | controllers.main.containers.main.env.PGID | int | `1000` |  |
 | controllers.main.containers.main.env.PUID | int | `1000` |  |
+| controllers.main.containers.main.env.SAMPLE_RATE | int | `16000` |  |
 | controllers.main.containers.main.env.TZ | string | `"Etc/UTC"` |  |
-| controllers.main.containers.main.env.WHISPER_MODEL | string | `"tiny-int8"` |  |
-| controllers.main.containers.main.image.repository | string | `"lscr.io/linuxserver/whisper-asr"` |  |
+| controllers.main.containers.main.image.repository | string | `"onerahmet/openai-whisper-asr-webservice"` |  |
 | controllers.main.containers.main.image.tag | string | `"latest"` |  |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.whisper-asr-config.advancedMounts.main.main[0].path | string | `"/config"` |  |
-| persistence.whisper-asr-config.enabled | bool | `true` |  |
+| persistence.whisper-asr-config.enabled | bool | `false` |  |
 | persistence.whisper-asr-config.hostPath | string | `"/path/to/your/config/whisper-asr"` |  |
 | persistence.whisper-asr-config.hostPathType | string | `"DirectoryOrCreate"` |  |
 | persistence.whisper-asr-config.type | string | `"hostPath"` |  |
