@@ -1257,6 +1257,24 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/jellyseerr-0.0.1/jellyseerr-0.0.1.tgz
     version: 0.0.1
+  komga:
+  - apiVersion: v2
+    appVersion: 2.2.3
+    created: "2025-01-13T16:59:01.2164339Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.1
+    description: Comic server
+    digest: 43b245acd59d879db79387d1bc026437a1da62373eb103237ded765593f8cba0
+    icon: https://github.com/gotson/komga/raw/develop/public/logo_full.svg
+    name: komga
+    sources:
+    - https://github.com/gotson/komga
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/komga-0.0.2/komga-0.0.2.tgz
+    version: 0.0.2
   lazylibrarian:
   - apiVersion: v2
     appVersion: version-be7d9ccf
@@ -3346,4 +3364,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-13T16:44:38.030990606Z"
+generated: "2025-01-13T16:59:01.216738538Z"
