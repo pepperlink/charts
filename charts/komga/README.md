@@ -1,8 +1,8 @@
 # komga
 
-![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.2.3](https://img.shields.io/badge/AppVersion-2.2.3-informational?style=flat-square)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.2.3](https://img.shields.io/badge/AppVersion-2.2.3-informational?style=flat-square)
 
-Request movies and series
+Comic server
 
 ## Source Code
 
@@ -12,7 +12,7 @@ Request movies and series
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.6.0 |
+| https://bjw-s.github.io/helm-charts | common | 3.6.1 |
 
 ## Values
 
@@ -22,11 +22,11 @@ Request movies and series
 | controllers.main.containers.main.image.repository | string | `"gotson/komga"` |  |
 | controllers.main.containers.main.image.tag | string | `""` |  |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| persistence.jellyseer-config.advancedMounts.main.main[0].path | string | `"/app/config"` |  |
-| persistence.jellyseer-config.enabled | bool | `true` |  |
-| persistence.jellyseer-config.hostPath | string | `"/path/to/your/config/komga"` |  |
-| persistence.jellyseer-config.hostPathType | string | `"DirectoryOrCreate"` |  |
-| persistence.jellyseer-config.type | string | `"hostPath"` |  |
+| persistence.config.advancedMounts.main.main[0].path | string | `"/config"` |  |
+| persistence.config.enabled | bool | `false` |  |
+| persistence.config.hostPath | string | `"/path/to/your/config/komga"` |  |
+| persistence.config.hostPathType | string | `"DirectoryOrCreate"` |  |
+| persistence.config.type | string | `"hostPath"` |  |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 | serviceAccount.create | bool | `false` |  |
 
