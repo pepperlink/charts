@@ -7,7 +7,7 @@ type: application
 sources:
   - https://github.com/fallenbagel/jellyseerr
 # renovate: image=docker.io/fallenbagel/jellyseerr
-appVersion: "2.2.3"
+appVersion: "2.3.0"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
