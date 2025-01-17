@@ -1156,6 +1156,23 @@ entries:
     version: 0.1.20
   jellyseerr:
   - apiVersion: v2
+    appVersion: 2.3.0
+    created: "2025-01-17T04:43:04.43593374Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.1
+    description: Request movies and series
+    digest: 3a069d6a29f535c85782ed73e5d7cef486dfe5f4bf45f05c614ff4947225f8e4
+    icon: https://github.com/Fallenbagel/jellyseerr/raw/develop/public/logo_full.svg
+    name: jellyseerr
+    sources:
+    - https://github.com/fallenbagel/jellyseerr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyseerr-0.0.7/jellyseerr-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
     appVersion: 2.2.3
     created: "2025-01-12T13:56:28.794913696Z"
     dependencies:
@@ -3522,4 +3539,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-17T03:37:21.210106993Z"
+generated: "2025-01-17T04:43:04.436294678Z"
