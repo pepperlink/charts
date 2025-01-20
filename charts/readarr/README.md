@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 0.1.39](https://img.shields.io/badge/Version-0.1.39-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.8-develop](https://img.shields.io/badge/AppVersion-0.4.8--develop-informational?style=flat-square)
+![Version: 0.1.40](https://img.shields.io/badge/Version-0.1.40-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.9-develop](https://img.shields.io/badge/AppVersion-0.4.9--develop-informational?style=flat-square)
 
 readarr is for books.
 
