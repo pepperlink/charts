@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  apprise:
+  - apiVersion: v2
+    appVersion: 1.1.8
+    created: "2025-01-24T19:21:25.23082429Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.6.1
+    description: Apprise
+    digest: a9e8b77200a2b24db230cd8a9ad4958dc4124611ce7199784c7e0db81de7e4f4
+    name: apprise
+    sources:
+    - https://github.com/gotson/apprise
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/apprise-0.0.1/apprise-0.0.1.tgz
+    version: 0.0.1
   bazarr:
   - apiVersion: v2
     appVersion: 1.5.1
@@ -2446,6 +2463,21 @@ entries:
     version: 0.0.1
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.30.2
+    created: "2025-01-24T19:21:25.353726414Z"
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack.
+    digest: 1d445723ae8bb7dfb450db72fb3c9a8b713138ac27f4dcd41b2d6483b59c62c4
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: prowlarr
+    sources:
+    - https://github.com/linuxserver/docker-prowlarr
+    - https://docs.linuxserver.io/images/docker-prowlarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/prowlarr-0.1.30/prowlarr-0.1.30.tgz
+    version: 0.1.30
+  - apiVersion: v2
     appVersion: 1.29.2
     created: "2025-01-05T15:38:22.760004675Z"
     description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
@@ -3653,4 +3685,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-23T04:02:47.923056856Z"
+generated: "2025-01-24T19:21:25.354217736Z"
