@@ -15,8 +15,9 @@ controllers:
           PUID: "1000"
           PGID: "1000"
       scraper:
-        image: ghcr.io/sarperavci/cloudflarebypassforscraping
-        tag: latest
+        image:
+          repository: ghcr.io/sarperavci/cloudflarebypassforscraping
+          tag: latest
 
 serviceAccount:
   create: false
