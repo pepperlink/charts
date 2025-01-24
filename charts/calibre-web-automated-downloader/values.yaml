@@ -3,7 +3,7 @@ controllers:
     containers:
       main:
         image:
-          repository: lscr.io/linuxserver/cwadownloader-api
+          repository: ghcr.io/calibrain/calibre-web-automated-book-downloader
           tag: latest
         env:
           FLASK_PORT: 8084
