@@ -3,13 +3,19 @@ controllers:
     containers:
       main:
         image:
-          repository: lscr.io/linuxserver/apprise-api
-          tag: ""
+          repository: lscr.io/linuxserver/cwadownloader-api
+          tag: latest
         env:
+          FLASK_PORT: 8084
+          FLASK_DEBUG: false
+          CLOUDFLARE_PROXY_URL: http://cloudflarebypassforscraping:8000
+          INGEST_DIR: /cwa-book-ingest
+          BOOK_LANGUAGE: en
           TZ: "Etc/UTC"
           PUID: "1000"
           PGID: "1000"
-          apprise_ATTACH_SIZE: "0" # Optional
+      cloudflarebypassforscraping:
+        image: ghcr.io/sarperavci/cloudflarebypassforscraping:latest
 
 serviceAccount:
   create: false
@@ -21,8 +27,12 @@ service:
     controller: main
     ports:
       http:
+        port: 8084
+  cloudflarebypassforscraping:
+    controller: main
+    ports:
+      http:
         port: 8000
-
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
@@ -33,34 +43,24 @@ ingress:
       # nginx.ingress.kubernetes.io/proxy-body-size: 64m
       # cert-manager.io/cluster-issuer: letsencrypt-prod
     hosts:
-      - host: apprise.local
+      - host: cwadownloader.local
         paths:
           - path: /
             service:
               identifier: main
               port: http
     tls:
-      - secretName: apprise.local
+      - secretName: cwadownloader.local
         hosts:
-          - apprise.local
+          - cwadownloader.local
 
 persistence:
-  config:
+  ingest:
     enabled: false
     type: hostPath
     hostPathType: DirectoryOrCreate
     advancedMounts:
       main:
         main:
-          - path: /config
-    hostPath: /path/to/your/config/apprise
-  # Optional Attachments
-  attachments:
-    enabled: false
-    type: hostPath
-    hostPathType: DirectoryOrCreate
-    advancedMounts:
-      main:
-        main:
-          - path: /attachments
-    hostPath: /path/to/apprise/attachments
+          - path: /cwa-book-ingest
+    hostPath: /path/to/your/ingest/folder
