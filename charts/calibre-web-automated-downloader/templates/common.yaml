@@ -17,6 +17,12 @@ controllers:
           {{ if not .Values.controllers.main.containers.main.image.tag -}}
           tag: "{{ .Chart.AppVersion }}"
           {{- end }}
+      scraper:
+        image:
+          repository: {{ .Values.controllers.main.containers.scraper.image.repository }}
+          {{ if not .Values.controllers.main.containers.scraper.image.tag -}}
+          tag: "{{ .Chart.AppVersion }}"
+          {{- end }}
 {{- end -}}
 
 {{- $_ := mergeOverwrite .Values (include "this.hardcodedValues" . | fromYaml) -}}

@@ -8,14 +8,15 @@ controllers:
         env:
           FLASK_PORT: 8084
           FLASK_DEBUG: false
-          CLOUDFLARE_PROXY_URL: http://cloudflarebypassforscraping:8000
+          CLOUDFLARE_PROXY_URL: http://localhost:8000
           INGEST_DIR: /cwa-book-ingest
           BOOK_LANGUAGE: en
           TZ: "Etc/UTC"
           PUID: "1000"
           PGID: "1000"
-      cloudflarebypassforscraping:
-        image: ghcr.io/sarperavci/cloudflarebypassforscraping:latest
+      scraper:
+        image: ghcr.io/sarperavci/cloudflarebypassforscraping
+        tag: latest
 
 serviceAccount:
   create: false
@@ -28,11 +29,11 @@ service:
     ports:
       http:
         port: 8084
-  cloudflarebypassforscraping:
-    controller: main
-    ports:
-      http:
-        port: 8000
+  # cloudflarebypassforscraping:
+  #   controller: main
+  #   ports:
+  #     http:
+  #       port: 8000
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
