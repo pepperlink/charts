@@ -21,7 +21,7 @@ controllers:
         image:
           repository: {{ .Values.controllers.main.containers.scraper.image.repository }}
           {{ if not .Values.controllers.main.containers.scraper.image.tag -}}
-          tag: "{{ .Chart.AppVersion }}"
+          tag: latest
           {{- end }}
 {{- end -}}
 

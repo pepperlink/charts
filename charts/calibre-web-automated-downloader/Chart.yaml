@@ -6,7 +6,7 @@ type: application
 sources:
   - https://github.com/calibrain/calibre-web-automated-book-downloader
 # renovate: image=ghcr.io/calibrain/calibre-web-automated-book-downloader
-appVersion: latest
+appVersion: "20250125"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
