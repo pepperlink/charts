@@ -1,6 +1,6 @@
 # jellyfin
 
-![Version: 0.1.31](https://img.shields.io/badge/Version-0.1.31-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 10.10.4](https://img.shields.io/badge/AppVersion-10.10.4-informational?style=flat-square)
+![Version: 0.1.32](https://img.shields.io/badge/Version-0.1.32-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 10.10.5](https://img.shields.io/badge/AppVersion-10.10.5-informational?style=flat-square)
 
 Jellyfin Media Server
 
