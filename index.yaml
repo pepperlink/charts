@@ -1073,6 +1073,18 @@ entries:
     version: 0.0.1
   jellyfin:
   - apiVersion: v2
+    appVersion: 10.10.5
+    created: "2025-01-26T10:15:19.342780554Z"
+    description: Jellyfin Media Server
+    digest: f496a3dba8f1b166d8aa7d78999bf1cfb13df5f19b16744d32294ef778188d14
+    name: jellyfin
+    sources:
+    - https://hub.docker.com/r/jellyfin/jellyfin
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyfin-0.1.32/jellyfin-0.1.32.tgz
+    version: 0.1.32
+  - apiVersion: v2
     appVersion: 10.10.4
     created: "2025-01-23T04:00:10.036833186Z"
     description: Jellyfin Media Server
@@ -3718,4 +3730,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-01-24T22:59:33.60992491Z"
+generated: "2025-01-26T10:15:19.343231445Z"
