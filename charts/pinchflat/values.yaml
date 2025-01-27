@@ -4,7 +4,7 @@ controllers:
       main:
         image:
           repository: ghcr.io/kieraneglin/pinchflat
-          tag: latest
+          tag: ""
         env:
           # For a list of env vars, see https://github.com/kieraneglin/pinchflat
           TZ: "UTC"
