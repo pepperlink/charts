@@ -1,6 +1,6 @@
 {{- include "bjw-s.common.loader.init" . }}
 
-{{- define "pinchflat.hardcodedValues" -}}
+{{- define "this.hardcodedValues" -}}
 # Set the nameOverride based on the release name if no override has been set
 {{ if not .Values.global.nameOverride }}
 global:
@@ -13,15 +13,15 @@ controllers:
     containers:
       main:
         image:
-          repository: {{ .Values.controllers.main.containers.main.image.repository -}}
+          repository: {{ .Values.controllers.main.containers.main.image.repository }}
           {{ if not .Values.controllers.main.containers.main.image.tag -}}
           tag: "{{ .Chart.AppVersion }}"
           {{- end }}
 {{- end -}}
 
-{{- $_ := mergeOverwrite .Values (include "pinchflat.hardcodedValues" . | fromYaml) -}}
+{{- $_ := mergeOverwrite .Values (include "this.hardcodedValues" . | fromYaml) -}}
 
-{{- define "pinchflat.values" -}}
+{{- define "this.values" -}}
 controllers:
   main:
     containers:
@@ -33,7 +33,7 @@ controllers:
 
 {{- end -}}
 
-{{- $_ := mergeOverwrite .Values (include "pinchflat.values" . | fromYaml) -}}
+{{- $_ := mergeOverwrite .Values (include "this.values" . | fromYaml) -}}
 
 {{/* Render the templates */}}
 {{ include "bjw-s.common.loader.generate" . }}
