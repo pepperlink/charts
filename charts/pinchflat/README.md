@@ -1,6 +1,6 @@
 # pinchflat
 
-![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2025.1.17](https://img.shields.io/badge/AppVersion-v2025.1.17-informational?style=flat-square)
+![Version: 0.0.7](https://img.shields.io/badge/Version-0.0.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2025.1.27](https://img.shields.io/badge/AppVersion-v2025.1.27-informational?style=flat-square)
 
 Automatically download YouTube videos on a schedule
 
@@ -20,7 +20,7 @@ Automatically download YouTube videos on a schedule
 |-----|------|---------|-------------|
 | controllers.main.containers.main.env.TZ | string | `"UTC"` |  |
 | controllers.main.containers.main.image.repository | string | `"ghcr.io/kieraneglin/pinchflat"` |  |
-| controllers.main.containers.main.image.tag | string | `"latest"` |  |
+| controllers.main.containers.main.image.tag | string | `""` |  |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.pinchflat-config.advancedMounts.main.main[0].path | string | `"/config"` |  |
 | persistence.pinchflat-config.enabled | bool | `false` |  |
