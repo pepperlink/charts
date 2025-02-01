@@ -47,6 +47,13 @@
       "automerge": true
     },
     {
+      "description": "Helm charts with vx.y.z versioning",
+      "matchFileNames": ["**/Chart.yaml"],
+      "versioning": "regex:v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
+      "autoApprove": true,
+      "automerge": true
+    },
+    {
       "description": "Ignore old versioning scheme of qbittorrent",
       "matchPackageNames": ["ghcr.io/linuxserver/qbittorrent"],
       "allowedVersions": ">=5.0.0 || <10.0.0",
