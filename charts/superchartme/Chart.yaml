@@ -1,0 +1,14 @@
+apiVersion: v2
+name: superchartme
+version: 0.0.1
+description: "Pepperlink Superchart, based on bjw-s' common chart"
+icon: https://avatars.githubusercontent.com/u/9306662?s=48&v=4
+type: application
+sources:
+  - https://github.com/pepperlink/charts
+# renovate: image=hello-world
+appVersion: "latest"
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 3.6.1
