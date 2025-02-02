@@ -1,6 +1,6 @@
 apiVersion: v2
 name: whisper-asr
-version: 0.0.3
+version: 0.2.1
 description: "Whisper implementation that supports OpenAI Whisper and Faster Whisper"
 # icon: https://github.com/riffsphereha/whisper-asr/raw/develop/public/logo_full.svg
 type: application
