@@ -1,39 +1,18 @@
 {{- include "bjw-s.common.loader.init" . }}
-
-{{- define "newznabarr.hardcodedValues" -}}
-# Set the nameOverride based on the release name if no override has been set
+{{- define "this.values" -}}
 {{ if not .Values.global.nameOverride }}
 global:
   nameOverride: "{{ .Release.Name }}"
 {{ end }}
+{{ if not .Values.controllers.main.containers.main.image.tag -}}
 controllers:
   main:
-    enabled: true
-    type: deployment
     containers:
       main:
         image:
-          repository: riffsphereha/newznabarr
-          {{ if not .Values.controllers.main.containers.main.image.tag -}}
           tag: "{{ .Chart.AppVersion }}"
-          {{- end }}
+{{- end }}
 {{- end -}}
-
-{{- $_ := mergeOverwrite .Values (include "newznabarr.hardcodedValues" . | fromYaml) -}}
-
-{{- define "newznabarr.values" -}}
-controllers:
-  main:
-    containers:
-      main:
-        env:
-          {{- if .Values.controllers.main.containers.main.env }}
-          {{- toYaml .Values.controllers.main.containers.main.env | nindent 10 }}
-          {{- end }}
-
-{{- end -}}
-
-{{- $_ := mergeOverwrite .Values (include "newznabarr.values" . | fromYaml) -}}
-
+{{- $_ := mergeOverwrite .Values (include "this.values" . | fromYaml) -}}
 {{/* Render the templates */}}
 {{ include "bjw-s.common.loader.generate" . }}
