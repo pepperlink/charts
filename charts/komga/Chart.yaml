@@ -1,13 +1,13 @@
 apiVersion: v2
 name: komga
-version: 0.2.1
+version: 0.2.2
 description: "Comic server"
 icon: https://github.com/gotson/komga/raw/develop/public/logo_full.svg
 type: application
 sources:
   - https://github.com/gotson/komga
 # renovate: image=docker.io/gotson/komga
-appVersion: "1.19.0"
+appVersion: "1.19.1"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
