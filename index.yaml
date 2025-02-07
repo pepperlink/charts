@@ -3,6 +3,22 @@ entries:
   apprise:
   - apiVersion: v2
     appVersion: 1.1.8
+    created: "2025-02-07T21:51:52.095487269Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: apprise
+    digest: d27866de87243fea6e697d9a52ab86ec777c3361f2b4fef02fcd2f2bbf0931df
+    name: apprise
+    sources:
+    - https://github.com/gotson/apprise
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/apprise-0.2.2/apprise-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 1.1.8
     created: "2025-02-02T13:17:01.926469071Z"
     dependencies:
     - name: common
@@ -322,6 +338,22 @@ entries:
   cwadownloader:
   - apiVersion: v2
     appVersion: "20250125"
+    created: "2025-02-07T21:51:52.284306259Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: Search for books on Anna's Archive
+    digest: 67550af81b0e42085f380ecc83cff36696b0cef4415fec7e6b757d52c5353731
+    name: cwadownloader
+    sources:
+    - https://github.com/calibrain/calibre-web-automated-book-downloader
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/cwadownloader-0.2.2/cwadownloader-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: "20250125"
     created: "2025-02-02T13:17:02.100877427Z"
     dependencies:
     - name: common
@@ -444,6 +476,23 @@ entries:
     - https://github.com/pepperlink/charts/releases/download/deluge-0.1.30/deluge-0.1.30.tgz
     version: 0.1.30
   faster-whisper:
+  - apiVersion: v2
+    appVersion: 2.4.0
+    created: "2025-02-07T21:51:52.427610558Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: A reimplementation of OpenAI's Whisper model using CTranslate2. Includes
+      Wyoming protocol server.
+    digest: 21e0cc76c17fcd4796af7b4e922b21695ff05f972a1d215e900bba197d7923a1
+    name: faster-whisper
+    sources:
+    - https://github.com/linuxserver/docker-faster-whisper
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/faster-whisper-0.2.2/faster-whisper-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     appVersion: 2.4.0
     created: "2025-02-02T13:17:02.270887433Z"
@@ -1293,6 +1342,23 @@ entries:
   jellyseerr:
   - apiVersion: v2
     appVersion: 2.3.0
+    created: "2025-02-07T21:51:52.581141596Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: Request movies and series
+    digest: d2681429b4732ce91d29f52d33b96bd4ac99537bfc90401c2c66aa10c59956be
+    icon: https://github.com/Fallenbagel/jellyseerr/raw/develop/public/logo_full.svg
+    name: jellyseerr
+    sources:
+    - https://github.com/fallenbagel/jellyseerr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/jellyseerr-0.2.2/jellyseerr-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 2.3.0
     created: "2025-02-02T13:17:02.619471299Z"
     dependencies:
     - name: common
@@ -1428,6 +1494,23 @@ entries:
     - https://github.com/pepperlink/charts/releases/download/jellyseerr-0.0.1/jellyseerr-0.0.1.tgz
     version: 0.0.1
   komga:
+  - apiVersion: v2
+    appVersion: 1.19.1
+    created: "2025-02-07T21:51:52.724715805Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: Comic server
+    digest: a7fd11e53b537583a0a7aaddb6cec3fbd1a2627bb469444eb27420c48ad3ef65
+    icon: https://github.com/gotson/komga/raw/develop/public/logo_full.svg
+    name: komga
+    sources:
+    - https://github.com/gotson/komga
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/komga-0.2.3/komga-0.2.3.tgz
+    version: 0.2.3
   - apiVersion: v2
     appVersion: 1.19.1
     created: "2025-02-03T12:35:13.150295807Z"
@@ -1794,6 +1877,22 @@ entries:
   newznabarr:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2025-02-07T21:51:52.865605161Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: A sabnzb-like interface that fully supports plugins
+    digest: 62d8685bc37646c0be4e371aef27dc4e2b12d52bd3067c9bbe6ec86b7540ad3e
+    name: newznabarr
+    sources:
+    - https://github.com/riffsphereha/newznabarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/newznabarr-0.2.2/newznabarr-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2025-02-02T13:17:02.965622671Z"
     dependencies:
     - name: common
@@ -1857,6 +1956,36 @@ entries:
     - https://github.com/pepperlink/charts/releases/download/newznabarr-0.0.1/newznabarr-0.0.1.tgz
     version: 0.0.1
   paperless-ngx:
+  - apiVersion: v2
+    appVersion: 2.14.7
+    created: "2025-02-07T21:51:53.038866437Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: 2beab6a4af2240a180068e7a118db76ae1d23e09168b4bd1d5faf5d568de29ac
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/paperless-ngx-0.2.2/paperless-ngx-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     appVersion: 2.14.7
     created: "2025-02-02T13:17:03.178186463Z"
@@ -2716,6 +2845,23 @@ entries:
     - https://github.com/pepperlink/charts/releases/download/pepperlink-0.0.1/pepperlink-0.0.1.tgz
     version: 0.0.1
   pinchflat:
+  - apiVersion: v2
+    appVersion: v2025.1.27
+    created: "2025-02-07T21:51:53.247586251Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: Automatically download YouTube videos on a schedule
+    digest: 041d56c077a3ca2efb1fee51fda5e30dbefc7e523ed41b7e93e9916cc4b55672
+    icon: https://github.com/kieraneglin/pinchflat/blob/master/priv/static/images/icon-2024-03-20.png
+    name: pinchflat
+    sources:
+    - https://github.com/kieraneglin/pinchflat
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/pinchflat-0.2.2/pinchflat-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     appVersion: v2025.1.27
     created: "2025-02-02T13:17:03.529441236Z"
@@ -3754,6 +3900,23 @@ entries:
   superchartme:
   - apiVersion: v2
     appVersion: latest
+    created: "2025-02-07T21:51:53.428615126Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: Pepperlink Superchart, based on bjw-s' common chart
+    digest: a1ab40a918bf23d627a5e39d974b17264b6bc735d97dceb8c6fde58f15bab466
+    icon: https://avatars.githubusercontent.com/u/9306662?s=48&v=4
+    name: superchartme
+    sources:
+    - https://github.com/pepperlink/charts
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/superchartme-0.0.2/superchartme-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2025-02-02T13:17:03.721606516Z"
     dependencies:
     - name: common
@@ -3770,6 +3933,35 @@ entries:
     - https://github.com/pepperlink/charts/releases/download/superchartme-0.0.1/superchartme-0.0.1.tgz
     version: 0.0.1
   vikunja:
+  - apiVersion: v2
+    appVersion: 0.24.6
+    created: "2025-02-07T21:51:53.619709679Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.19.4
+    description: The Todo-app to organize your life.
+    digest: 01e52326125e0ae0aeeef2e4943c3e2f4dbd3ad9b7fbbd199cdb872641c2961c
+    icon: https://kolaente.dev/vikunja/vikunja/raw/branch/main/frontend/public/images/icons/icon-maskable.png
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/vikunja
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/vikunja-0.2.2/vikunja-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     appVersion: 0.24.6
     created: "2025-02-02T13:17:03.92548678Z"
@@ -4121,6 +4313,22 @@ entries:
   whisper-asr:
   - apiVersion: v2
     appVersion: v1.7.1
+    created: "2025-02-07T21:51:53.820956856Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.0
+    description: Whisper implementation that supports OpenAI Whisper and Faster Whisper
+    digest: b6f57907a2cc5903355cd39d081ea902ef7736a2fb7acebf67cf786b7bdea035
+    name: whisper-asr
+    sources:
+    - https://github.com/ahmetoner/whisper-asr-webservice
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.2.2/whisper-asr-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: v1.7.1
     created: "2025-02-02T13:17:04.14438971Z"
     dependencies:
     - name: common
@@ -4167,4 +4375,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-07T08:22:58.551510107Z"
+generated: "2025-02-07T21:51:53.821477032Z"
