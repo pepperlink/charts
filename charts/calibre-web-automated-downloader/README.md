@@ -1,6 +1,6 @@
 # cwadownloader
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 20250125](https://img.shields.io/badge/AppVersion-20250125-informational?style=flat-square)
 
 Search for books on Anna's Archive
 
@@ -12,7 +12,7 @@ Search for books on Anna's Archive
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.6.1 |
+| https://bjw-s.github.io/helm-charts | common | 3.7.0 |
 
 ## Values
 
@@ -27,7 +27,7 @@ Search for books on Anna's Archive
 | controllers.main.containers.main.env.PUID | string | `"1000"` |  |
 | controllers.main.containers.main.env.TZ | string | `"Etc/UTC"` |  |
 | controllers.main.containers.main.image.repository | string | `"ghcr.io/calibrain/calibre-web-automated-book-downloader"` |  |
-| controllers.main.containers.main.image.tag | string | `"latest"` |  |
+| controllers.main.containers.main.image.tag | string | `""` |  |
 | controllers.main.containers.scraper.image.repository | string | `"ghcr.io/sarperavci/cloudflarebypassforscraping"` |  |
 | controllers.main.containers.scraper.image.tag | string | `"latest"` |  |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
