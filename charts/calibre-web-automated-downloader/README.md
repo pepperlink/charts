@@ -1,6 +1,6 @@
 # cwadownloader
 
-![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 20250125](https://img.shields.io/badge/AppVersion-20250125-informational?style=flat-square)
+![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 20250125](https://img.shields.io/badge/AppVersion-20250125-informational?style=flat-square)
 
 Search for books on Anna's Archive
 
@@ -12,7 +12,7 @@ Search for books on Anna's Archive
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.7.0 |
+| https://bjw-s.github.io/helm-charts | common | 3.7.1 |
 
 ## Values
 
