@@ -1,6 +1,6 @@
 # calibre
 
-![Version: 0.1.39](https://img.shields.io/badge/Version-0.1.39-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 7.25.0](https://img.shields.io/badge/AppVersion-7.25.0-informational?style=flat-square)
+![Version: 0.1.40](https://img.shields.io/badge/Version-0.1.40-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 7.26.0](https://img.shields.io/badge/AppVersion-7.26.0-informational?style=flat-square)
 
 calibre is an organizer and contentserver for books.
 
