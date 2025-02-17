@@ -7,7 +7,7 @@ type: application
 sources:
   - https://github.com/ahmetoner/whisper-asr-webservice
 # renovate: image=onerahmet/openai-whisper-asr-webservice
-appVersion: "v1.7.1"
+appVersion: "v1.8.0"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
