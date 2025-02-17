@@ -1,13 +1,13 @@
 apiVersion: v2
 name: whisper-asr
-version: 0.2.3
+version: 0.2.4
 description: "Whisper implementation that supports OpenAI Whisper and Faster Whisper"
 # icon: https://github.com/riffsphereha/whisper-asr/raw/develop/public/logo_full.svg
 type: application
 sources:
   - https://github.com/ahmetoner/whisper-asr-webservice
 # renovate: image=onerahmet/openai-whisper-asr-webservice
-appVersion: "v1.7.1"
+appVersion: "v1.8.0"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
