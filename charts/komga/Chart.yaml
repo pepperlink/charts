@@ -7,7 +7,7 @@ type: application
 sources:
   - https://github.com/gotson/komga
 # renovate: image=docker.io/gotson/komga
-appVersion: "1.19.1"
+appVersion: "1.20.0"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
