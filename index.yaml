@@ -3348,6 +3348,21 @@ entries:
     version: 0.1.20
   qbittorrent:
   - apiVersion: v2
+    appVersion: 5.0.4
+    created: "2025-02-20T03:57:55.416497394Z"
+    description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: b6dd400d442a06f83e7598556a562f8dd786b8dd82c7fda89e44a80f3cebf424
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: qbittorrent
+    sources:
+    - https://github.com/linuxserver/docker-qbittorrent
+    - https://docs.linuxserver.io/images/docker-qbittorrent
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/qbittorrent-0.1.12/qbittorrent-0.1.12.tgz
+    version: 0.1.12
+  - apiVersion: v2
     appVersion: 5.0.3
     created: "2024-12-21T15:23:27.523059035Z"
     description: qbittorrent is a lightweight, Free Software, cross-platform BitTorrent
@@ -4667,4 +4682,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-20T03:56:34.034616052Z"
+generated: "2025-02-20T03:57:55.417066837Z"
