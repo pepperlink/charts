@@ -3029,6 +3029,23 @@ entries:
     version: 0.0.1
   pinchflat:
   - apiVersion: v2
+    appVersion: v2025.2.20
+    created: "2025-02-21T01:28:06.627908815Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.1
+    description: Automatically download YouTube videos on a schedule
+    digest: 2f75b2c01516ca8dc7be364feeebba2b124710cec9d5b2c9d41a1917ec0cf4a9
+    icon: https://github.com/kieraneglin/pinchflat/blob/master/priv/static/images/icon-2024-03-20.png
+    name: pinchflat
+    sources:
+    - https://github.com/kieraneglin/pinchflat
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/pinchflat-0.2.4/pinchflat-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
     appVersion: v2025.1.27
     created: "2025-02-12T00:14:37.589958639Z"
     dependencies:
@@ -4699,4 +4716,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-20T05:28:34.276830203Z"
+generated: "2025-02-21T01:28:06.628310425Z"
