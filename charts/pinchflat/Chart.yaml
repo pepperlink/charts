@@ -1,13 +1,13 @@
 apiVersion: v2
 name: pinchflat
-version: 0.2.3
+version: 0.2.4
 description: "Automatically download YouTube videos on a schedule"
 icon: https://github.com/kieraneglin/pinchflat/blob/master/priv/static/images/icon-2024-03-20.png
 type: application
 sources:
   - https://github.com/kieraneglin/pinchflat
 # renovate: image=ghcr.io/kieraneglin/pinchflat
-appVersion: "v2025.1.27"
+appVersion: "v2025.2.20"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
