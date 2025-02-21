@@ -7,7 +7,7 @@ type: application
 sources:
   - https://github.com/kieraneglin/pinchflat
 # renovate: image=ghcr.io/kieraneglin/pinchflat
-appVersion: "v2025.1.27"
+appVersion: "v2025.2.20"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
