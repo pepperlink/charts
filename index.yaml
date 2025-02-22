@@ -3217,6 +3217,21 @@ entries:
     version: 0.0.1
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.31.2
+    created: "2025-02-22T14:56:29.53951052Z"
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack.
+    digest: 664fc7dd93fe704323a54ca43bcdbe3954c7e969e697d88e950ec05dabf7087c
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: prowlarr
+    sources:
+    - https://github.com/linuxserver/docker-prowlarr
+    - https://docs.linuxserver.io/images/docker-prowlarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/prowlarr-0.1.31/prowlarr-0.1.31.tgz
+    version: 0.1.31
+  - apiVersion: v2
     appVersion: 1.30.2
     created: "2025-01-24T19:21:25.353726414Z"
     description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
@@ -4716,4 +4731,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-21T01:28:06.628310425Z"
+generated: "2025-02-22T14:56:29.540055827Z"
