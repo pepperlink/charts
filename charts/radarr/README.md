@@ -1,6 +1,6 @@
 # radarr
 
-![Version: 0.1.33](https://img.shields.io/badge/Version-0.1.33-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.18.4](https://img.shields.io/badge/AppVersion-5.18.4-informational?style=flat-square)
+![Version: 0.1.34](https://img.shields.io/badge/Version-0.1.34-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.19.3](https://img.shields.io/badge/AppVersion-5.19.3-informational?style=flat-square)
 
 radarr is a lightweight, Free Software, cross-platform BitTorrent client.
 
