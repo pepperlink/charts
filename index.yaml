@@ -3514,6 +3514,21 @@ entries:
     version: 0.1.6
   radarr:
   - apiVersion: v2
+    appVersion: 5.19.3
+    created: "2025-02-25T22:10:52.717184598Z"
+    description: radarr is a lightweight, Free Software, cross-platform BitTorrent
+      client.
+    digest: 8e4371e671c235b77779dba5370fb711a91e088f5ee7a0da179aea80cf854a7f
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: radarr
+    sources:
+    - https://github.com/linuxserver/docker-radarr
+    - https://docs.linuxserver.io/images/docker-radarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/radarr-0.1.34/radarr-0.1.34.tgz
+    version: 0.1.34
+  - apiVersion: v2
     appVersion: 5.18.4
     created: "2025-02-03T17:55:32.298050546Z"
     description: radarr is a lightweight, Free Software, cross-platform BitTorrent
@@ -4743,4 +4758,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-22T22:59:47.110645599Z"
+generated: "2025-02-25T22:10:52.717614693Z"
