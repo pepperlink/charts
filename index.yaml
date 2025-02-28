@@ -1915,6 +1915,18 @@ entries:
     version: 0.0.1
   mealie:
   - apiVersion: v2
+    appVersion: v2.7.1
+    created: "2025-02-28T14:55:43.423521756Z"
+    description: mealie has your recipes.
+    digest: f7c4a36c762f57b93d98e2db8fb937d09a6ff0bd7d4c9b4ae6631d960909e832
+    name: mealie
+    sources:
+    - https://github.com/mealie-recipes/mealie/
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/mealie-0.1.13/mealie-0.1.13.tgz
+    version: 0.1.13
+  - apiVersion: v2
     appVersion: v2.7.0
     created: "2025-02-27T19:41:57.934300344Z"
     description: mealie has your recipes.
@@ -4770,4 +4782,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-02-27T19:41:57.934796684Z"
+generated: "2025-02-28T14:55:43.424239736Z"
