@@ -7,4 +7,4 @@ type: application
 sources:
   - https://docs.linuxserver.io/images/docker-readarr
 # renovate: image=linuxserver/readarr
-appVersion: "0.4.10-develop"
+appVersion: "0.4.11-develop"
