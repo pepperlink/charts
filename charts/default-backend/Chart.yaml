@@ -1,6 +1,6 @@
 apiVersion: v2
 name: default-backend
-version: "0.1.5"
+version: "0.1.6"
 description: Default Backend for Ingress Controller
 type: application
 sources:
