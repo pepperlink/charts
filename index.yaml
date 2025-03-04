@@ -447,6 +447,18 @@ entries:
     version: 0.0.1
   default-backend:
   - apiVersion: v2
+    appVersion: 3.3.2
+    created: "2025-03-04T12:36:22.608749447Z"
+    description: Default Backend for Ingress Controller
+    digest: 99b857a5764171dd2296cabc8e138af82caa91e732e194d622bb3da4fb9d1ca6
+    name: default-backend
+    sources:
+    - https://github.com/tarampampam/error-pages
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/default-backend-0.1.6/default-backend-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     appVersion: 3.3.1
     created: "2024-12-11T16:52:20.213962089Z"
     description: Default Backend for Ingress Controller
@@ -4795,4 +4807,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-03-02T22:43:07.923077681Z"
+generated: "2025-03-04T12:36:22.609279324Z"
