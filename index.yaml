@@ -1599,6 +1599,23 @@ entries:
   komga:
   - apiVersion: v2
     appVersion: 1.21.1
+    created: "2025-03-07T00:07:19.531135844Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.2
+    description: Comic server
+    digest: 6367c5268de18b27c16783e3ff25a35dd1e7d9409ea39823b3719ffae17edb9b
+    icon: https://github.com/gotson/komga/raw/develop/public/logo_full.svg
+    name: komga
+    sources:
+    - https://github.com/gotson/komga
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/komga-0.2.8/komga-0.2.8.tgz
+    version: 0.2.8
+  - apiVersion: v2
+    appVersion: 1.21.1
     created: "2025-03-07T00:05:46.050454415Z"
     dependencies:
     - name: common
@@ -4824,4 +4841,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-03-07T00:05:46.050960083Z"
+generated: "2025-03-07T00:07:20.25321202Z"
