@@ -1,6 +1,6 @@
 apiVersion: v2
 name: pinchflat
-version: 0.2.4
+version: 0.2.5
 description: "Automatically download YouTube videos on a schedule"
 icon: https://github.com/kieraneglin/pinchflat/blob/master/priv/static/images/icon-2024-03-20.png
 type: application

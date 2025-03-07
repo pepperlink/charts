@@ -1,6 +1,6 @@
 # pinchflat
 
-![Version: 0.2.4](https://img.shields.io/badge/Version-0.2.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2025.2.20](https://img.shields.io/badge/AppVersion-v2025.2.20-informational?style=flat-square)
+![Version: 0.2.5](https://img.shields.io/badge/Version-0.2.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2025.3.6](https://img.shields.io/badge/AppVersion-v2025.3.6-informational?style=flat-square)
 
 Automatically download YouTube videos on a schedule
 
@@ -12,7 +12,7 @@ Automatically download YouTube videos on a schedule
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.7.1 |
+| https://bjw-s.github.io/helm-charts | common | 3.7.2 |
 
 ## Values
 
