@@ -1,13 +1,13 @@
 apiVersion: v2
 name: jellyseerr
-version: 0.2.3
+version: 0.2.4
 description: "Request movies and series"
 icon: https://github.com/Fallenbagel/jellyseerr/raw/develop/public/logo_full.svg
 type: application
 sources:
   - https://github.com/fallenbagel/jellyseerr
 # renovate: image=docker.io/fallenbagel/jellyseerr
-appVersion: "2.3.0"
+appVersion: "2.4.0"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
