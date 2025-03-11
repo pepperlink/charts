@@ -2,6 +2,22 @@ apiVersion: v1
 entries:
   apprise:
   - apiVersion: v2
+    appVersion: 1.1.9
+    created: "2025-03-11T15:25:51.945809388Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.7.2
+    description: apprise
+    digest: 718b157aa90665dfbcc07a1ad9859fc9e1f9d7fa08348490630deb6f8e84dc7d
+    name: apprise
+    sources:
+    - https://github.com/gotson/apprise
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/apprise-0.2.4/apprise-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
     appVersion: 1.1.8
     created: "2025-02-12T00:14:36.664365817Z"
     dependencies:
@@ -4900,4 +4916,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-03-10T23:11:26.217853753Z"
+generated: "2025-03-11T15:25:51.946125853Z"
