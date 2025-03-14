@@ -1,6 +1,6 @@
 apiVersion: v2
 name: newznabarr
-version: 0.2.3
+version: 0.2.4
 description: "A sabnzb-like interface that fully supports plugins"
 # icon: https://github.com/riffsphereha/newznabarr/raw/develop/public/logo_full.svg
 type: application
@@ -11,4 +11,4 @@ appVersion: "0.0.1"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 3.7.2
+    version: 3.7.3
