@@ -1,6 +1,6 @@
 apiVersion: v2
 name: faster-whisper
-version: 0.2.3
+version: 0.2.4
 description: "A reimplementation of OpenAI's Whisper model using CTranslate2. Includes Wyoming protocol server."
 # icon: https://github.com/riffsphereha/faster-whisper/raw/develop/public/logo_full.svg
 type: application
