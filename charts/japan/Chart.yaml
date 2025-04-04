@@ -1,9 +1,0 @@
-apiVersion: v2
-name: japan
-version: "0.0.25"
-description: Website for Japan 2024
-type: application
-sources:
-  - https://github.com/cathelijne/japan
-# renovate: image=ghcr.io/cathelijne/japan
-appVersion: "2024.10.28.1205"

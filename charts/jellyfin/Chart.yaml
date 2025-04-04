@@ -1,9 +1,0 @@
-apiVersion: v2
-description: Jellyfin Media Server
-name: jellyfin
-version: "0.1.33"
-type: application
-sources:
-  - https://hub.docker.com/r/jellyfin/jellyfin
-# renovate: image=docker.io/jellyfin/jellyfin
-appVersion: "10.10.6"
