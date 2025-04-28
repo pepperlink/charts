@@ -1,6 +1,6 @@
 apiVersion: v2
 name: paperless-ngx
-version: 0.2.19
+version: 0.2.20
 description: "A community-supported supercharged version of paperless: scan, index and archive all your physical documents"
 icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
 type: application
@@ -22,5 +22,5 @@ dependencies:
     condition: mariadb.enabled
   - name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 20.13.2
+    version: 20.13.3
     condition: redis.enabled
