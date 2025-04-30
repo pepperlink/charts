@@ -22,5 +22,5 @@ dependencies:
     condition: mariadb.enabled
   - name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 20.13.3
+    version: 20.13.4
     condition: redis.enabled
