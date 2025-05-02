@@ -12,7 +12,7 @@ A sabnzb-like interface that fully supports plugins
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.7.3 |
+| https://bjw-s-charts.github.io/helm-charts | common | 3.7.3 |
 
 ## Values
 

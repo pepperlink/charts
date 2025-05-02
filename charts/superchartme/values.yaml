@@ -1,7 +1,7 @@
 # At thhe absolute minimum, you need to specify the image repository to use.
 # As an example, here is a minimal configuration that runs the hello-world container.
 
-# For all available options, see the documentation at bjw-s.github.io/helm-charts
+# For all available options, see the documentation at bjw-s-charts.github.io/helm-charts
 
 controllers:
   main:

@@ -10,5 +10,5 @@ sources:
 appVersion: "0.0.1"
 dependencies:
   - name: common
-    repository: https://bjw-s.github.io/helm-charts
+    repository: https://bjw-s-charts.github.io/helm-charts
     version: 3.7.3

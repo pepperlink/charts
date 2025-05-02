@@ -12,7 +12,7 @@ Pepperlink Superchart, based on bjw-s' common chart
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.7.3 |
+| https://bjw-s-charts.github.io/helm-charts | common | 3.7.3 |
 
 ## Values
 

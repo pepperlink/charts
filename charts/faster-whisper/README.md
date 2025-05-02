@@ -12,7 +12,7 @@ A reimplementation of OpenAI's Whisper model using CTranslate2. Includes Wyoming
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.7.3 |
+| https://bjw-s-charts.github.io/helm-charts | common | 3.7.3 |
 
 ## Values
 

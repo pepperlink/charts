@@ -12,7 +12,7 @@ A community-supported supercharged version of paperless: scan, index and archive
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 3.7.3 |
+| https://bjw-s-charts.github.io/helm-charts | common | 3.7.3 |
 | https://charts.bitnami.com/bitnami | mariadb | 20.4.2 |
 | https://charts.bitnami.com/bitnami | postgresql | 14.3.3 |
 | https://charts.bitnami.com/bitnami | redis | 20.11.4 |
