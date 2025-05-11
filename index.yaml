@@ -4499,6 +4499,19 @@ entries:
     version: 0.1.20
   readarr:
   - apiVersion: v2
+    appVersion: 0.4.16-develop
+    created: "2025-05-11T06:33:04.76063422Z"
+    description: readarr is for books.
+    digest: 2d3bea433c017fb825d22bc2a77b73a504638abce4df9cbcb1e86711263de7b4
+    icon: https://docs.linuxserver.io/assets/icon.svg
+    name: readarr
+    sources:
+    - https://docs.linuxserver.io/images/docker-readarr
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/readarr-0.1.47/readarr-0.1.47.tgz
+    version: 0.1.47
+  - apiVersion: v2
     appVersion: 0.4.15-develop
     created: "2025-04-20T10:26:50.16752887Z"
     description: readarr is for books.
@@ -5631,4 +5644,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-08T19:40:13.914205348Z"
+generated: "2025-05-11T06:33:04.761227426Z"
