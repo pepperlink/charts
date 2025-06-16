@@ -7,7 +7,7 @@ type: application
 sources:
   - https://github.com/linuxserver/docker-faster-whisper
 # renovate: image=lscr.io/linuxserver/faster-whisper
-appVersion: "2.4.0"
+appVersion: "2.5.0"
 dependencies:
   - name: common
     repository: https://bjw-s-labs.github.io/helm-charts
