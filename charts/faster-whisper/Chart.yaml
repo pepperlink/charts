@@ -1,13 +1,13 @@
 apiVersion: v2
 name: faster-whisper
-version: 0.2.4
+version: 0.2.5
 description: "A reimplementation of OpenAI's Whisper model using CTranslate2. Includes Wyoming protocol server."
 # icon: https://github.com/riffsphereha/faster-whisper/raw/develop/public/logo_full.svg
 type: application
 sources:
   - https://github.com/linuxserver/docker-faster-whisper
 # renovate: image=lscr.io/linuxserver/faster-whisper
-appVersion: "2.4.0"
+appVersion: "2.5.0"
 dependencies:
   - name: common
     repository: https://bjw-s-labs.github.io/helm-charts
