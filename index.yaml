@@ -550,6 +550,23 @@ entries:
     version: 0.1.30
   faster-whisper:
   - apiVersion: v2
+    appVersion: 2.5.0
+    created: "2025-06-16T20:30:26.07898543Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts
+      version: 3.7.3
+    description: A reimplementation of OpenAI's Whisper model using CTranslate2. Includes
+      Wyoming protocol server.
+    digest: 5b05cc11eb593fa829ff0b7294b3c65cc6e0ea85f70cbf415163af798dbc54a4
+    name: faster-whisper
+    sources:
+    - https://github.com/linuxserver/docker-faster-whisper
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/faster-whisper-0.2.5/faster-whisper-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v2
     appVersion: 2.4.0
     created: "2025-03-14T10:20:18.073143604Z"
     dependencies:
@@ -5879,4 +5896,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-06-14T09:15:07.508985307Z"
+generated: "2025-06-16T20:30:26.079751443Z"
