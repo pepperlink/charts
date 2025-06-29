@@ -5854,6 +5854,22 @@ entries:
     version: 0.0.2
   whisper-asr:
   - apiVersion: v2
+    appVersion: v1.9.0
+    created: "2025-06-29T02:29:05.328214332Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts
+      version: 3.7.3
+    description: Whisper implementation that supports OpenAI Whisper and Faster Whisper
+    digest: 982e60bc052f55391c1ae2436a49d65cb0e563f697823b59fafdaa64b6afb598
+    name: whisper-asr
+    sources:
+    - https://github.com/ahmetoner/whisper-asr-webservice
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.2.7/whisper-asr-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
     appVersion: v1.8.2
     created: "2025-03-14T10:20:18.944332782Z"
     dependencies:
@@ -5981,4 +5997,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2025-06-22T05:31:03.772689306Z"
+generated: "2025-06-29T02:29:05.329090734Z"
