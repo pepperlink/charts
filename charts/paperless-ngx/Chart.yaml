@@ -7,7 +7,7 @@ type: application
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: "2.19.5"
+appVersion: "2.19.6"
 dependencies:
   - name: common
     repository: https://bjw-s-labs.github.io/helm-charts
