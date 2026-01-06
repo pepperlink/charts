@@ -1,9 +1,9 @@
 apiVersion: v2
 name: linkding
-version: "0.1.29"
+version: "0.1.30"
 description: LinkDing
 type: application
 sources:
   - https://github.com/sissbruecker/linkding
 # renovate: image=sissbruecker/linkding
-appVersion: "1.44.2"
+appVersion: "1.45.0"
