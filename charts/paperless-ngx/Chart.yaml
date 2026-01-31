@@ -1,13 +1,13 @@
 apiVersion: v2
 name: paperless-ngx
-version: 0.2.50
+version: 0.2.51
 description: "A community-supported supercharged version of paperless: scan, index and archive all your physical documents"
 icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
 type: application
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: "2.20.5"
+appVersion: "2.20.6"
 dependencies:
   - name: common
     repository: https://bjw-s-labs.github.io/helm-charts
