@@ -108,7 +108,7 @@ jobs:
 
       - name: Commit Changes and Push
         id: commit-changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         env:
           CHART: ${{ matrix.charts }}
         with:
