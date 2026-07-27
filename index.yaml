@@ -2465,6 +2465,36 @@ entries:
   paperless-ngx:
   - apiVersion: v2
     appVersion: 3.0.3
+    created: "2026-07-27T13:44:17.190844021Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts
+      version: 3.7.3
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 26.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 27.0.18
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: 8e5cd8a104d746b76b1962ac1b577c78b8097885a24d7641111e52a0bb7bb829
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/paperless-ngx-0.2.67/paperless-ngx-0.2.67.tgz
+    version: 0.2.67
+  - apiVersion: v2
+    appVersion: 3.0.3
     created: "2026-07-26T04:52:05.688065962Z"
     dependencies:
     - name: common
@@ -7146,4 +7176,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2026-07-26T04:52:05.688533364Z"
+generated: "2026-07-27T13:44:17.191780068Z"
