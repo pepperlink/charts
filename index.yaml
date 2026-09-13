@@ -1967,6 +1967,18 @@ entries:
     version: 0.1.1
   linkding:
   - apiVersion: v2
+    appVersion: 1.47.0
+    created: "2026-09-13T17:49:53.440010671Z"
+    description: LinkDing
+    digest: 4edee13fc46587cb1202c8ecba7c63a0cdb11eaecf350b27a8523c3e45faaab3
+    name: linkding
+    sources:
+    - https://github.com/sissbruecker/linkding
+    type: application
+    urls:
+    - https://github.com/pepperlink/charts/releases/download/linkding-0.1.34/linkding-0.1.34.tgz
+    version: 0.1.34
+  - apiVersion: v2
     appVersion: 1.46.2
     created: "2026-08-18T21:56:06.838213352Z"
     description: LinkDing
@@ -7519,4 +7531,4 @@ entries:
     urls:
     - https://github.com/pepperlink/charts/releases/download/whisper-asr-0.0.1/whisper-asr-0.0.1.tgz
     version: 0.0.1
-generated: "2026-09-12T00:58:51.064337613Z"
+generated: "2026-09-13T17:49:53.440645876Z"
