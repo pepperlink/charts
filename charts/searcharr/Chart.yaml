@@ -1,9 +1,0 @@
-apiVersion: v2
-name: searcharr
-version: "0.1.4"
-description: searcharr
-type: application
-sources:
-  - https://github.com/cathelijne/searcharr
-# renovate: image=ghcr.io/cathelijne/searcharr
-appVersion: "v3.2.2"
